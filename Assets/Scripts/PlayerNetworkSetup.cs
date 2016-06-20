@@ -8,7 +8,7 @@ public class PlayerNetworkSetup : NetworkBehaviour {
 	   if (isLocalPlayer) {
             GetComponent<PlayerMovement>().enabled = true;
             GetComponent<PlayerInput>().enabled = true;
-            PlayerReference.AddPlayer(gameObject);
        }
+       PlayerReference.AddPlayer(gameObject);
 	}
 }

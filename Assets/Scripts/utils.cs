@@ -11,17 +11,19 @@ public static class utils {
         }
 
         GameObject nearestPlayer = players[0];
-        float nearestPlayerDistance = Vector2.Distance(
-            nearestPlayer.transform.position, seeker.transform.position);
+        float nearestPlayerDistance = GetDistance(nearestPlayer, seeker);
 
         foreach (GameObject player in players) {
-            float currentDistance = Vector2.Distance(player.transform.position,
-                seeker.transform.position);
+            float currentDistance = GetDistance(player, seeker);
             if (nearestPlayerDistance > currentDistance) {
                 nearestPlayer = player;
                 nearestPlayerDistance = currentDistance;
             }
         }
         return nearestPlayer;
+    }
+
+    public static float GetDistance(GameObject x, GameObject y) {
+        return Vector2.Distance(x.transform.position, y.transform.position);
     }
 }

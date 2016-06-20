@@ -17,7 +17,6 @@ public class EnemyMovement : MonoBehaviour {
     }
 
     void MoveTowardsNearestPlayer() {
-        Debug.Log("nearestPlayer: " + nearestPlayer);
         if (nearestPlayer == null) {
             return;
         }
