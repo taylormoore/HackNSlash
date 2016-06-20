@@ -141,6 +141,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 73476bc489aa7604e903c57c012552b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerReference: {fileID: 152320, guid: 156a598b8abb75245aa70bd1113cdd5d, type: 2}
 --- !u!114 &11474426
 MonoBehaviour:
   m_ObjectHideFlags: 1
