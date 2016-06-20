@@ -2,9 +2,11 @@
 using System.Collections;
 using UnityEngine.Networking;
 
+[NetworkSettings(channel=1,sendInterval=0.2f)]
 public class EnemyStatus : NetworkBehaviour {
 
 	[SyncVar]
+    [SerializeField]
 	private int enemyHealth;
 
     float damageCooldown = 2f;
@@ -14,7 +16,7 @@ public class EnemyStatus : NetworkBehaviour {
         lastDamageTaken = Time.time;
     }
 
-	public void ApplyDamage(int value) {
+	public void CmdApplyDamage(int value) {
         if (Time.time > lastDamageTaken + damageCooldown) {
             lastDamageTaken = Time.time;
             enemyHealth -= value;
