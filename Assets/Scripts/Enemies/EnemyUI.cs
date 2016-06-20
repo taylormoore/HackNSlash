@@ -7,14 +7,7 @@ public class EnemyUI : MonoBehaviour {
 	[SerializeField]
 	Text healthText;
 
-	EnemyStatus enemyStatus;
-
-	void Awake() {
-		enemyStatus = GetComponent<EnemyStatus>();
-		SetHealthUI();
-	}
-
-	public void SetHealthUI() {
-		healthText.text = enemyStatus.GetHealth().ToString();
+	public void SetHealthUI(int health) {
+		healthText.text = health.ToString();
 	}
 }

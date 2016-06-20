@@ -13,12 +13,13 @@ public class EnemyStatus : NetworkBehaviour {
 
     void Awake() {
         enemyUI = GetComponent<EnemyUI>();
+        enemyUI.SetHealthUI(enemyHealth);
     }
 
-	public void CmdApplyDamage(int value) {
+	public void ApplyDamage(int value) {
         enemyHealth -= value;
         Debug.Log("Enemy Health: " + enemyHealth);
-        enemyUI.SetHealthUI();
+        enemyUI.SetHealthUI(enemyHealth);
 	}
 
 	public int GetHealth() {
