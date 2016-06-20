@@ -9,19 +9,16 @@ public class EnemyStatus : NetworkBehaviour {
     [SerializeField]
 	private int enemyHealth;
 
-    float damageCooldown = 2f;
-    float lastDamageTaken;
+    EnemyUI enemyUI;
 
-    void Start() {
-        lastDamageTaken = Time.time;
+    void Awake() {
+        enemyUI = GetComponent<EnemyUI>();
     }
 
 	public void CmdApplyDamage(int value) {
-        if (Time.time > lastDamageTaken + damageCooldown) {
-            lastDamageTaken = Time.time;
-            enemyHealth -= value;
-            Debug.Log("Enemy Health: " + enemyHealth);
-        }
+        enemyHealth -= value;
+        Debug.Log("Enemy Health: " + enemyHealth);
+        enemyUI.SetHealthUI();
 	}
 
 	public int GetHealth() {

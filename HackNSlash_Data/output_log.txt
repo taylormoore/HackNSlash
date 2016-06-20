@@ -1,0 +1,61 @@
+Initialize engine version: 5.3.5f1 (960ebf59018a)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce GTX 980 (ID=0x13c0)
+    Vendor:   NVIDIA
+    VRAM:     3072 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: J:\Unity Projects\HackNSlash\HackNSlash_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading J:\Unity Projects\HackNSlash\HackNSlash_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: J:\Unity Projects\HackNSlash\HackNSlash_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading J:\Unity Projects\HackNSlash\HackNSlash_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: J:\Unity Projects\HackNSlash\HackNSlash_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading J:\Unity Projects\HackNSlash\HackNSlash_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: J:\Unity Projects\HackNSlash\HackNSlash_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading J:\Unity Projects\HackNSlash\HackNSlash_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: J:\Unity Projects\HackNSlash\HackNSlash_Data\Managed\Rewired_Core.dll (this message is harmless)
+Loading J:\Unity Projects\HackNSlash\HackNSlash_Data\Managed\Rewired_Core.dll into Unity Child Domain
+Platform assembly: J:\Unity Projects\HackNSlash\HackNSlash_Data\Managed\Rewired_Windows_Lib.dll (this message is harmless)
+Loading J:\Unity Projects\HackNSlash\HackNSlash_Data\Managed\Rewired_Windows_Lib.dll into Unity Child Domain
+- Completed reload, in  0.048 seconds
+Platform assembly: J:\Unity Projects\HackNSlash\HackNSlash_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: J:\Unity Projects\HackNSlash\HackNSlash_Data\Managed\System.dll (this message is harmless)
+desktop: 1920x1080 144Hz; virtual: 3840x1080 at -1920,0
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+UnloadTime: 0.515214 ms
+Non platform assembly: data-12BC1088 (this message is harmless)
+Fallback handler could not load library J:/Unity Projects/HackNSlash/HackNSlash_Data/Mono/data-12BC1088.dll
+Non platform assembly: data-12BD15E0 (this message is harmless)
+Fallback handler could not load library J:/Unity Projects/HackNSlash/HackNSlash_Data/Mono/data-12BD15E0.dll
+Non platform assembly: data-03FFB020 (this message is harmless)
+Fallback handler could not load library J:/Unity Projects/HackNSlash/HackNSlash_Data/Mono/data-03FFB020.dll
+Fallback handler could not load library J:/Unity Projects/HackNSlash/HackNSlash_Data/Mono/steam_api
+Fallback handler could not load library J:/Unity Projects/HackNSlash/HackNSlash_Data/Mono/.\steam_api
+Fallback handler could not load library J:/Unity Projects/HackNSlash/HackNSlash_Data/Mono/steam_api
+Fallback handler could not load library J:/Unity Projects/HackNSlash/HackNSlash_Data/Mono/libsteam_api
+Fallback handler could not load library J:/Unity Projects/HackNSlash/HackNSlash_Data/Mono/.\libsteam_api
+Fallback handler could not load library J:/Unity Projects/HackNSlash/HackNSlash_Data/Mono/libsteam_api
+Fallback handler could not load library J:/Unity Projects/HackNSlash/HackNSlash_Data/Mono/steam_api
+Fallback handler could not load library J:/Unity Projects/HackNSlash/HackNSlash_Data/Mono/.\steam_api
+Fallback handler could not load library J:/Unity Projects/HackNSlash/HackNSlash_Data/Mono/steam_api
+Fallback handler could not load library J:/Unity Projects/HackNSlash/HackNSlash_Data/Mono/libsteam_api
+Fallback handler could not load library J:/Unity Projects/HackNSlash/HackNSlash_Data/Mono/.\libsteam_api
+Fallback handler could not load library J:/Unity Projects/HackNSlash/HackNSlash_Data/Mono/libsteam_api
+Rewired: Searching for compatible XInput library...
+Rewired: Found Xinput1_3.dll.
+Platform assembly: J:\Unity Projects\HackNSlash\HackNSlash_Data\Managed\System.Xml.dll (this message is harmless)
+Setting up 2 worker threads for Enlighten.
+  Thread -> id: 141c -> priority: 1 
+  Thread -> id: b00 -> priority: 1 
+Player(Clone) (UnityEngine.GameObject) added to players list.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Player(Clone) (UnityEngine.GameObject) added to players list.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Log: connection {1} has been disconnected by timeout; address {::ffff:127.0.0.1:61858}
