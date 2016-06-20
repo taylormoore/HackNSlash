@@ -238,6 +238,10 @@ Prefab:
       propertyPath: movementSpeed
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 128878, guid: cb633ac52652b204da7b2a9b60821cac, type: 2}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cb633ac52652b204da7b2a9b60821cac, type: 2}
   m_IsPrefabParent: 0
