@@ -234,25 +234,13 @@ Prefab:
       propertyPath: m_RootOrder
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 11441588, guid: cb633ac52652b204da7b2a9b60821cac, type: 2}
+      propertyPath: movementSpeed
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cb633ac52652b204da7b2a9b60821cac, type: 2}
   m_IsPrefabParent: 0
---- !u!1 &565861924 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 128878, guid: cb633ac52652b204da7b2a9b60821cac, type: 2}
-  m_PrefabInternal: {fileID: 565861923}
---- !u!114 &565861925
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 565861924}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5065964212976584293f78082f0f5386, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  enemyHealth: 100
 --- !u!1 &975772689
 GameObject:
   m_ObjectHideFlags: 0

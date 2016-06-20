@@ -429,7 +429,7 @@ PlayerSettings:
   - XboxOne::enus
   XboxOne::enus: 1
   stringPropertyNames: []
-  cloudProjectId: 
-  projectName: 
-  organizationId: 
+  cloudProjectId: 6b08885c-ec65-4820-8b9a-8e27a880a5d4
+  projectName: HackNSlash
+  organizationId: incursive
   cloudEnabled: 0
