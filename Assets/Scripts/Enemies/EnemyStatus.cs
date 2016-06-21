@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.Networking;
+
 public class EnemyStatus : NetworkBehaviour {
 
 	[SyncVar(hook="SetHealth")]
@@ -16,6 +17,7 @@ public class EnemyStatus : NetworkBehaviour {
 
     public void SetHealth(int health) {
         enemyHealth = health;
+        enemyUI.SetHealthUI(enemyHealth);
     }
 
     void OnBecameInvisible() {
@@ -26,6 +28,9 @@ public class EnemyStatus : NetworkBehaviour {
         enemyHealth -= value;
         Debug.Log("Enemy Health: " + enemyHealth);
         enemyUI.SetHealthUI(enemyHealth);
+        if (enemyHealth < 0) {
+            NetworkServer.Destroy(gameObject);
+        }
 	}
 
 	public int GetHealth() {
