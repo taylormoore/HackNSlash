@@ -1,7 +1,8 @@
 ﻿using UnityEngine;
+using UnityEngine.Networking;
 using System.Collections;
 
-public class ProjectileMovement : MonoBehaviour {
+public class ProjectileMovement : NetworkBehaviour {
 
 	[SerializeField]
 	float movementSpeed;
@@ -11,6 +12,11 @@ public class ProjectileMovement : MonoBehaviour {
 	Direction myDirection = Direction.left;
 
 	void Update() {
+
+		if (!Network.isServer) {  // Bullet is only updated on the server.
+			return;
+		}
+
 		switch (myDirection) {
 			case Direction.left:
 			transform.Translate(Vector2.left * movementSpeed * Time.deltaTime);
@@ -31,10 +37,11 @@ public class ProjectileMovement : MonoBehaviour {
 			default:
 			Debug.Log("Aw shit bitch");
 			break;
-		}
+		}	
 	}
 
-	public void SetDirection(int direction) {
+	[Command]
+	public void CmdSetDirection(int direction) {
 		switch (direction) {
 			case 1:
 			myDirection = Direction.left;

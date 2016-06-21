@@ -16,7 +16,7 @@ public class EnemyStatus : NetworkBehaviour {
         enemyUI.SetHealthUI(enemyHealth);
     }
 
-	public void ApplyDamage(int value) {
+	public void CmdApplyDamage(int value) {
         enemyHealth -= value;
         Debug.Log("Enemy Health: " + enemyHealth);
         enemyUI.SetHealthUI(enemyHealth);
