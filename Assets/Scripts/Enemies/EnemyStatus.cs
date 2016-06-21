@@ -3,8 +3,8 @@ using System.Collections;
 using UnityEngine.Networking;
 public class EnemyStatus : NetworkBehaviour {
 
-	[SyncVar]
-	[SyncVar(hook="ApplyDamage")]private int enemyHealth;
+	[SyncVar(hook="ApplyDamage")]
+    private int enemyHealth;
 
     EnemyUI enemyUI;
 
