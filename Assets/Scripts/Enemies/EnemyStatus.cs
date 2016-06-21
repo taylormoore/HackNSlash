@@ -3,7 +3,7 @@ using System.Collections;
 using UnityEngine.Networking;
 public class EnemyStatus : NetworkBehaviour {
 
-	[SyncVar(hook="ApplyDamage")]
+	[SyncVar(hook="SetHealth")]
     private int enemyHealth;
 
     EnemyUI enemyUI;
@@ -14,8 +14,7 @@ public class EnemyStatus : NetworkBehaviour {
         enemyUI.SetHealthUI(enemyHealth);
     }
 
-    [Command]
-    public void CmdSetHealth(int health) {
+    public void SetHealth(int health) {
         enemyHealth = health;
     }
 
