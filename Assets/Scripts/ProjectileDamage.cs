@@ -8,7 +8,7 @@ public class ProjectileDamage : MonoBehaviour {
 
 	void OnTriggerEnter2D(Collider2D otherObject) {
 		if (otherObject.gameObject.tag == "Enemy") {
-			otherObject.SendMessage("CmdApplyDamage", projectileDamage);
+			otherObject.SendMessage("ApplyDamage", projectileDamage);
 			Destroy(gameObject);
 		}
 	}

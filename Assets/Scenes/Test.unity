@@ -142,7 +142,8 @@ MonoBehaviour:
   m_PlayerSpawnMethod: 0
   m_OfflineScene: 
   m_OnlineScene: 
-  m_SpawnPrefabs: []
+  m_SpawnPrefabs:
+  - {fileID: 128702, guid: d8c9854c30a53fb4ca748f9554054935, type: 2}
   m_CustomConfig: 0
   m_MaxConnections: 4
   m_ConnectionConfig:
@@ -870,6 +871,10 @@ Prefab:
     - target: {fileID: 485404, guid: cb633ac52652b204da7b2a9b60821cac, type: 2}
       propertyPath: m_RootOrder
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11489800, guid: cb633ac52652b204da7b2a9b60821cac, type: 2}
+      propertyPath: enemyHealth
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cb633ac52652b204da7b2a9b60821cac, type: 2}
