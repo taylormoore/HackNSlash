@@ -1,8 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.Networking;
-
-[NetworkSettings(channel=1,sendInterval=0.2f)]
 public class EnemyStatus : NetworkBehaviour {
 
 	[SyncVar]
@@ -16,6 +14,7 @@ public class EnemyStatus : NetworkBehaviour {
         enemyUI.SetHealthUI(enemyHealth);
     }
 
+    [Command]
 	public void CmdApplyDamage(int value) {
         enemyHealth -= value;
         Debug.Log("Enemy Health: " + enemyHealth);

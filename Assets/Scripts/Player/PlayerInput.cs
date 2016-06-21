@@ -14,9 +14,6 @@ public class PlayerInput : MonoBehaviour
 
     void Update() {
         DetectInput();
-        if (horizontalAxis > 0) {
-           // GameObject.FindWithTag("Enemy").SendMessage("CmdApplyDamage", 10);
-        }
     }
 
     void DetectInput() {

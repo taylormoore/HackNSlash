@@ -13,10 +13,6 @@ public class ProjectileMovement : NetworkBehaviour {
 
 	void Update() {
 
-		if (!Network.isServer) {  // Bullet is only updated on the server.
-			return;
-		}
-
 		switch (myDirection) {
 			case Direction.left:
 			transform.Translate(Vector2.left * movementSpeed * Time.deltaTime);
