@@ -13,14 +13,17 @@ public class PlayerBasicAttack : NetworkBehaviour
 		if (Time.time > lastAttack + attackCooldown) {
 			if (PlayerInput.attackLeft) {
 				CmdShootProjectile(1);
+                lastAttack = Time.time;
 			} else if (PlayerInput.attackRight) {
 				CmdShootProjectile(2);
+                lastAttack = Time.time;
 			} else if (PlayerInput.attackUp) {
 				CmdShootProjectile(3);
+                lastAttack = Time.time;
 			} else if (PlayerInput.attackDown) {
 				CmdShootProjectile(4);
+                lastAttack = Time.time;
 			}
-			lastAttack = Time.time;
 		}
 	}
 
