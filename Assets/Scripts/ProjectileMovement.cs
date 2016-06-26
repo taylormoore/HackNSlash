@@ -7,39 +7,30 @@ public class ProjectileMovement : NetworkBehaviour {
 	[SerializeField]
 	float movementSpeed;
 
-    Rigidbody2D rigidBody;
+    [SyncVar]
+	int myDirection;
 
-	public enum Direction {left, right, up, down};
-
-    [SerializeField]
-	Direction myDirection = Direction.left;
-
-    void OnEnable() {
-        rigidBody = gameObject.GetComponent<Rigidbody2D>();
+    public void UpdateDirection(int direction) {
+        myDirection = direction;
+        Debug.Log(direction);
     }
-
+    
 	void FixedUpdate() {
-        if (!base.isServer)
-             return;
-             
+
 		switch (myDirection) {
-			case Direction.left:
-                rigidBody.constraints = RigidbodyConstraints2D.FreezePositionY;
+			case 1:
     			transform.Translate(Vector2.left * movementSpeed * Time.deltaTime);
     			break;
 
-			case Direction.right:
-                rigidBody.constraints = RigidbodyConstraints2D.FreezePositionY;
+			case 2:
     			transform.Translate(Vector2.right * movementSpeed * Time.deltaTime);
     			break;
 
-			case Direction.up:
-                rigidBody.constraints = RigidbodyConstraints2D.FreezePositionX;
+			case 3:
     			transform.Translate(Vector2.up * movementSpeed * Time.deltaTime);
     			break;
 
-			case Direction.down:
-                rigidBody.constraints = RigidbodyConstraints2D.FreezePositionX;
+			case 4:
     			transform.Translate(Vector2.down * movementSpeed * Time.deltaTime);
     			break;
 
@@ -47,53 +38,4 @@ public class ProjectileMovement : NetworkBehaviour {
                 break;
 		}
 	}
-
-    public void SetDirection(int direction) {
-        switch (direction) {
-            case 1:
-            myDirection = Direction.left;
-            break;
-
-            case 2:
-            myDirection = Direction.right;
-            break;
-
-            case 3:
-            myDirection = Direction.up;
-            break;
-
-            case 4:
-            myDirection = Direction.down;
-            break;
-
-            default:
-            Debug.Log("Setting direction failed");
-            break;
-        }
-    }
-
-	[Command]
-    public void CmdSetDirection(int direction) {
-        switch (direction) {
-            case 1:
-            myDirection = Direction.left;
-            break;
-
-            case 2:
-            myDirection = Direction.right;
-            break;
-
-            case 3:
-            myDirection = Direction.up;
-            break;
-
-            case 4:
-            myDirection = Direction.down;
-            break;
-
-            default:
-            Debug.Log("Setting direction failed");
-            break;
-        }
-    }
 }

@@ -29,7 +29,7 @@ public class PlayerBasicAttack : NetworkBehaviour
     [Command]
     public void CmdShootProjectile(int direction) {
         GameObject thisProjectile = (GameObject) Instantiate(projectile, transform.position, transform.rotation);
-        thisProjectile.SendMessage("SetDirection", direction);
+        thisProjectile.SendMessage("UpdateDirection", direction);
         Destroy(thisProjectile, 3f);
         NetworkServer.Spawn(thisProjectile);
     }

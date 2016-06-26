@@ -18,20 +18,20 @@ Platform assembly: C:\Users\zackt\Desktop\UnityGames\HackNSlash\build_Data\Manag
 Loading C:\Users\zackt\Desktop\UnityGames\HackNSlash\build_Data\Managed\Rewired_Core.dll into Unity Child Domain
 Platform assembly: C:\Users\zackt\Desktop\UnityGames\HackNSlash\build_Data\Managed\Rewired_Windows_Lib.dll (this message is harmless)
 Loading C:\Users\zackt\Desktop\UnityGames\HackNSlash\build_Data\Managed\Rewired_Windows_Lib.dll into Unity Child Domain
-- Completed reload, in  0.151 seconds
+- Completed reload, in  0.366 seconds
 Platform assembly: C:\Users\zackt\Desktop\UnityGames\HackNSlash\build_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: C:\Users\zackt\Desktop\UnityGames\HackNSlash\build_Data\Managed\System.dll (this message is harmless)
 desktop: 1920x1080 144Hz; virtual: 3840x1080 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
 <RI> Initialized touch support.
-UnloadTime: 0.453068 ms
-Non platform assembly: data-0F74B010 (this message is harmless)
-Fallback handler could not load library C:/Users/zackt/Desktop/UnityGames/HackNSlash/build_Data/Mono/data-0F74B010.dll
-Non platform assembly: data-0F724010 (this message is harmless)
-Fallback handler could not load library C:/Users/zackt/Desktop/UnityGames/HackNSlash/build_Data/Mono/data-0F724010.dll
-Non platform assembly: data-039A7020 (this message is harmless)
-Fallback handler could not load library C:/Users/zackt/Desktop/UnityGames/HackNSlash/build_Data/Mono/data-039A7020.dll
+UnloadTime: 21.833538 ms
+Non platform assembly: data-103BB330 (this message is harmless)
+Fallback handler could not load library C:/Users/zackt/Desktop/UnityGames/HackNSlash/build_Data/Mono/data-103BB330.dll
+Non platform assembly: data-10433DA8 (this message is harmless)
+Fallback handler could not load library C:/Users/zackt/Desktop/UnityGames/HackNSlash/build_Data/Mono/data-10433DA8.dll
+Non platform assembly: data-040A1020 (this message is harmless)
+Fallback handler could not load library C:/Users/zackt/Desktop/UnityGames/HackNSlash/build_Data/Mono/data-040A1020.dll
 Fallback handler could not load library C:/Users/zackt/Desktop/UnityGames/HackNSlash/build_Data/Mono/steam_api
 Fallback handler could not load library C:/Users/zackt/Desktop/UnityGames/HackNSlash/build_Data/Mono/.\steam_api
 Fallback handler could not load library C:/Users/zackt/Desktop/UnityGames/HackNSlash/build_Data/Mono/steam_api
@@ -48,13 +48,13 @@ Rewired: Searching for compatible XInput library...
 Rewired: Found Xinput1_3.dll.
 Platform assembly: C:\Users\zackt\Desktop\UnityGames\HackNSlash\build_Data\Managed\System.Xml.dll (this message is harmless)
 Setting up 2 worker threads for Enlighten.
-  Thread -> id: 19f4 -> priority: 1 
-  Thread -> id: 1f3c -> priority: 1 
+  Thread -> id: 568 -> priority: 1 
+  Thread -> id: 2c1c -> priority: 1 
 MatchMakingClient Create :https://mm.unet.unity3d.com/json/reply/CreateMatchRequest
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
 
-JSON Response: [[UnityEngine.Networking.Match.CreateMatchResponse]-success:True-extendedInfo:]-address:52.86.130.215,port:9999,networkId:0x001000000008278E,nodeId:0x776D,usingRelay:True
+JSON Response: [[UnityEngine.Networking.Match.CreateMatchResponse]-success:True-extendedInfo:]-address:52.71.166.171,port:9999,networkId:0x001000000008330D,nodeId:0x80E7,usingRelay:True
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
 
@@ -65,4 +65,509 @@ Player(Clone) (UnityEngine.GameObject) added to players list.
 Player(Clone) (UnityEngine.GameObject) added to players list.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+4
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+2
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+4
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+4
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+2
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+4
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+2
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+2
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+2
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+2
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+4
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+4
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+2
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Log: connection {1} has been disconnected by timeout; address {::ffff:52.71.166.171:9999}
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_transform ()
+  at utils.GetDistance (UnityEngine.GameObject x, UnityEngine.GameObject y) [0x00000] in <filename unknown>:0 
+  at utils.FindNearestPlayer (UnityEngine.GameObject seeker) [0x00000] in <filename unknown>:0 
+  at EnemyMovement.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_transform ()
+  at utils.GetDistance (UnityEngine.GameObject x, UnityEngine.GameObject y) [0x00000] in <filename unknown>:0 
+  at utils.FindNearestPlayer (UnityEngine.GameObject seeker) [0x00000] in <filename unknown>:0 
+  at EnemyMovement.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_transform ()
+  at utils.GetDistance (UnityEngine.GameObject x, UnityEngine.GameObject y) [0x00000] in <filename unknown>:0 
+  at utils.FindNearestPlayer (UnityEngine.GameObject seeker) [0x00000] in <filename unknown>:0 
+  at EnemyMovement.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_transform ()
+  at utils.GetDistance (UnityEngine.GameObject x, UnityEngine.GameObject y) [0x00000] in <filename unknown>:0 
+  at utils.FindNearestPlayer (UnityEngine.GameObject seeker) [0x00000] in <filename unknown>:0 
+  at EnemyMovement.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_transform ()
+  at utils.GetDistance (UnityEngine.GameObject x, UnityEngine.GameObject y) [0x00000] in <filename unknown>:0 
+  at utils.FindNearestPlayer (UnityEngine.GameObject seeker) [0x00000] in <filename unknown>:0 
+  at EnemyMovement.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_transform ()
+  at utils.GetDistance (UnityEngine.GameObject x, UnityEngine.GameObject y) [0x00000] in <filename unknown>:0 
+  at utils.FindNearestPlayer (UnityEngine.GameObject seeker) [0x00000] in <filename unknown>:0 
+  at EnemyMovement.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_transform ()
+  at utils.GetDistance (UnityEngine.GameObject x, UnityEngine.GameObject y) [0x00000] in <filename unknown>:0 
+  at utils.FindNearestPlayer (UnityEngine.GameObject seeker) [0x00000] in <filename unknown>:0 
+  at EnemyMovement.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_transform ()
+  at utils.GetDistance (UnityEngine.GameObject x, UnityEngine.GameObject y) [0x00000] in <filename unknown>:0 
+  at utils.FindNearestPlayer (UnityEngine.GameObject seeker) [0x00000] in <filename unknown>:0 
+  at EnemyMovement.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_transform ()
+  at utils.GetDistance (UnityEngine.GameObject x, UnityEngine.GameObject y) [0x00000] in <filename unknown>:0 
+  at utils.FindNearestPlayer (UnityEngine.GameObject seeker) [0x00000] in <filename unknown>:0 
+  at EnemyMovement.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_transform ()
+  at utils.GetDistance (UnityEngine.GameObject x, UnityEngine.GameObject y) [0x00000] in <filename unknown>:0 
+  at utils.FindNearestPlayer (UnityEngine.GameObject seeker) [0x00000] in <filename unknown>:0 
+  at EnemyMovement.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_transform ()
+  at utils.GetDistance (UnityEngine.GameObject x, UnityEngine.GameObject y) [0x00000] in <filename unknown>:0 
+  at utils.FindNearestPlayer (UnityEngine.GameObject seeker) [0x00000] in <filename unknown>:0 
+  at EnemyMovement.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_transform ()
+  at utils.GetDistance (UnityEngine.GameObject x, UnityEngine.GameObject y) [0x00000] in <filename unknown>:0 
+  at utils.FindNearestPlayer (UnityEngine.GameObject seeker) [0x00000] in <filename unknown>:0 
+  at EnemyMovement.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_transform ()
+  at utils.GetDistance (UnityEngine.GameObject x, UnityEngine.GameObject y) [0x00000] in <filename unknown>:0 
+  at utils.FindNearestPlayer (UnityEngine.GameObject seeker) [0x00000] in <filename unknown>:0 
+  at EnemyMovement.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_transform ()
+  at utils.GetDistance (UnityEngine.GameObject x, UnityEngine.GameObject y) [0x00000] in <filename unknown>:0 
+  at utils.FindNearestPlayer (UnityEngine.GameObject seeker) [0x00000] in <filename unknown>:0 
+  at EnemyMovement.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_transform ()
+  at utils.GetDistance (UnityEngine.GameObject x, UnityEngine.GameObject y) [0x00000] in <filename unknown>:0 
+  at utils.FindNearestPlayer (UnityEngine.GameObject seeker) [0x00000] in <filename unknown>:0 
+  at EnemyMovement.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_transform ()
+  at utils.GetDistance (UnityEngine.GameObject x, UnityEngine.GameObject y) [0x00000] in <filename unknown>:0 
+  at utils.FindNearestPlayer (UnityEngine.GameObject seeker) [0x00000] in <filename unknown>:0 
+  at EnemyMovement.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_transform ()
+  at utils.GetDistance (UnityEngine.GameObject x, UnityEngine.GameObject y) [0x00000] in <filename unknown>:0 
+  at utils.FindNearestPlayer (UnityEngine.GameObject seeker) [0x00000] in <filename unknown>:0 
+  at EnemyMovement.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_transform ()
+  at utils.GetDistance (UnityEngine.GameObject x, UnityEngine.GameObject y) [0x00000] in <filename unknown>:0 
+  at utils.FindNearestPlayer (UnityEngine.GameObject seeker) [0x00000] in <filename unknown>:0 
+  at EnemyMovement.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_transform ()
+  at utils.GetDistance (UnityEngine.GameObject x, UnityEngine.GameObject y) [0x00000] in <filename unknown>:0 
+  at utils.FindNearestPlayer (UnityEngine.GameObject seeker) [0x00000] in <filename unknown>:0 
+  at EnemyMovement.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_transform ()
+  at utils.GetDistance (UnityEngine.GameObject x, UnityEngine.GameObject y) [0x00000] in <filename unknown>:0 
+  at utils.FindNearestPlayer (UnityEngine.GameObject seeker) [0x00000] in <filename unknown>:0 
+  at EnemyMovement.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_transform ()
+  at utils.GetDistance (UnityEngine.GameObject x, UnityEngine.GameObject y) [0x00000] in <filename unknown>:0 
+  at utils.FindNearestPlayer (UnityEngine.GameObject seeker) [0x00000] in <filename unknown>:0 
+  at EnemyMovement.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_transform ()
+  at utils.GetDistance (UnityEngine.GameObject x, UnityEngine.GameObject y) [0x00000] in <filename unknown>:0 
+  at utils.FindNearestPlayer (UnityEngine.GameObject seeker) [0x00000] in <filename unknown>:0 
+  at EnemyMovement.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_transform ()
+  at utils.GetDistance (UnityEngine.GameObject x, UnityEngine.GameObject y) [0x00000] in <filename unknown>:0 
+  at utils.FindNearestPlayer (UnityEngine.GameObject seeker) [0x00000] in <filename unknown>:0 
+  at EnemyMovement.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_transform ()
+  at utils.GetDistance (UnityEngine.GameObject x, UnityEngine.GameObject y) [0x00000] in <filename unknown>:0 
+  at utils.FindNearestPlayer (UnityEngine.GameObject seeker) [0x00000] in <filename unknown>:0 
+  at EnemyMovement.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_transform ()
+  at utils.GetDistance (UnityEngine.GameObject x, UnityEngine.GameObject y) [0x00000] in <filename unknown>:0 
+  at utils.FindNearestPlayer (UnityEngine.GameObject seeker) [0x00000] in <filename unknown>:0 
+  at EnemyMovement.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_transform ()
+  at utils.GetDistance (UnityEngine.GameObject x, UnityEngine.GameObject y) [0x00000] in <filename unknown>:0 
+  at utils.FindNearestPlayer (UnityEngine.GameObject seeker) [0x00000] in <filename unknown>:0 
+  at EnemyMovement.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_transform ()
+  at utils.GetDistance (UnityEngine.GameObject x, UnityEngine.GameObject y) [0x00000] in <filename unknown>:0 
+  at utils.FindNearestPlayer (UnityEngine.GameObject seeker) [0x00000] in <filename unknown>:0 
+  at EnemyMovement.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_transform ()
+  at utils.GetDistance (UnityEngine.GameObject x, UnityEngine.GameObject y) [0x00000] in <filename unknown>:0 
+  at utils.FindNearestPlayer (UnityEngine.GameObject seeker) [0x00000] in <filename unknown>:0 
+  at EnemyMovement.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_transform ()
+  at utils.GetDistance (UnityEngine.GameObject x, UnityEngine.GameObject y) [0x00000] in <filename unknown>:0 
+  at utils.FindNearestPlayer (UnityEngine.GameObject seeker) [0x00000] in <filename unknown>:0 
+  at EnemyMovement.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_transform ()
+  at utils.GetDistance (UnityEngine.GameObject x, UnityEngine.GameObject y) [0x00000] in <filename unknown>:0 
+  at utils.FindNearestPlayer (UnityEngine.GameObject seeker) [0x00000] in <filename unknown>:0 
+  at EnemyMovement.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_transform ()
+  at utils.GetDistance (UnityEngine.GameObject x, UnityEngine.GameObject y) [0x00000] in <filename unknown>:0 
+  at utils.FindNearestPlayer (UnityEngine.GameObject seeker) [0x00000] in <filename unknown>:0 
+  at EnemyMovement.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_transform ()
+  at utils.GetDistance (UnityEngine.GameObject x, UnityEngine.GameObject y) [0x00000] in <filename unknown>:0 
+  at utils.FindNearestPlayer (UnityEngine.GameObject seeker) [0x00000] in <filename unknown>:0 
+  at EnemyMovement.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_transform ()
+  at utils.GetDistance (UnityEngine.GameObject x, UnityEngine.GameObject y) [0x00000] in <filename unknown>:0 
+  at utils.FindNearestPlayer (UnityEngine.GameObject seeker) [0x00000] in <filename unknown>:0 
+  at EnemyMovement.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_transform ()
+  at utils.GetDistance (UnityEngine.GameObject x, UnityEngine.GameObject y) [0x00000] in <filename unknown>:0 
+  at utils.FindNearestPlayer (UnityEngine.GameObject seeker) [0x00000] in <filename unknown>:0 
+  at EnemyMovement.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_transform ()
+  at utils.GetDistance (UnityEngine.GameObject x, UnityEngine.GameObject y) [0x00000] in <filename unknown>:0 
+  at utils.FindNearestPlayer (UnityEngine.GameObject seeker) [0x00000] in <filename unknown>:0 
+  at EnemyMovement.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_transform ()
+  at utils.GetDistance (UnityEngine.GameObject x, UnityEngine.GameObject y) [0x00000] in <filename unknown>:0 
+  at utils.FindNearestPlayer (UnityEngine.GameObject seeker) [0x00000] in <filename unknown>:0 
+  at EnemyMovement.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_transform ()
+  at utils.GetDistance (UnityEngine.GameObject x, UnityEngine.GameObject y) [0x00000] in <filename unknown>:0 
+  at utils.FindNearestPlayer (UnityEngine.GameObject seeker) [0x00000] in <filename unknown>:0 
+  at EnemyMovement.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_transform ()
+  at utils.GetDistance (UnityEngine.GameObject x, UnityEngine.GameObject y) [0x00000] in <filename unknown>:0 
+  at utils.FindNearestPlayer (UnityEngine.GameObject seeker) [0x00000] in <filename unknown>:0 
+  at EnemyMovement.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_transform ()
+  at utils.GetDistance (UnityEngine.GameObject x, UnityEngine.GameObject y) [0x00000] in <filename unknown>:0 
+  at utils.FindNearestPlayer (UnityEngine.GameObject seeker) [0x00000] in <filename unknown>:0 
+  at EnemyMovement.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_transform ()
+  at utils.GetDistance (UnityEngine.GameObject x, UnityEngine.GameObject y) [0x00000] in <filename unknown>:0 
+  at utils.FindNearestPlayer (UnityEngine.GameObject seeker) [0x00000] in <filename unknown>:0 
+  at EnemyMovement.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_transform ()
+  at utils.GetDistance (UnityEngine.GameObject x, UnityEngine.GameObject y) [0x00000] in <filename unknown>:0 
+  at utils.FindNearestPlayer (UnityEngine.GameObject seeker) [0x00000] in <filename unknown>:0 
+  at EnemyMovement.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_transform ()
+  at utils.GetDistance (UnityEngine.GameObject x, UnityEngine.GameObject y) [0x00000] in <filename unknown>:0 
+  at utils.FindNearestPlayer (UnityEngine.GameObject seeker) [0x00000] in <filename unknown>:0 
+  at EnemyMovement.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_transform ()
+  at utils.GetDistance (UnityEngine.GameObject x, UnityEngine.GameObject y) [0x00000] in <filename unknown>:0 
+  at utils.FindNearestPlayer (UnityEngine.GameObject seeker) [0x00000] in <filename unknown>:0 
+  at EnemyMovement.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_transform ()
+  at utils.GetDistance (UnityEngine.GameObject x, UnityEngine.GameObject y) [0x00000] in <filename unknown>:0 
+  at utils.FindNearestPlayer (UnityEngine.GameObject seeker) [0x00000] in <filename unknown>:0 
+  at EnemyMovement.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_transform ()
+  at utils.GetDistance (UnityEngine.GameObject x, UnityEngine.GameObject y) [0x00000] in <filename unknown>:0 
+  at utils.FindNearestPlayer (UnityEngine.GameObject seeker) [0x00000] in <filename unknown>:0 
+  at EnemyMovement.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_transform ()
+  at utils.GetDistance (UnityEngine.GameObject x, UnityEngine.GameObject y) [0x00000] in <filename unknown>:0 
+  at utils.FindNearestPlayer (UnityEngine.GameObject seeker) [0x00000] in <filename unknown>:0 
+  at EnemyMovement.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_transform ()
+  at utils.GetDistance (UnityEngine.GameObject x, UnityEngine.GameObject y) [0x00000] in <filename unknown>:0 
+  at utils.FindNearestPlayer (UnityEngine.GameObject seeker) [0x00000] in <filename unknown>:0 
+  at EnemyMovement.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_transform ()
+  at utils.GetDistance (UnityEngine.GameObject x, UnityEngine.GameObject y) [0x00000] in <filename unknown>:0 
+  at utils.FindNearestPlayer (UnityEngine.GameObject seeker) [0x00000] in <filename unknown>:0 
+  at EnemyMovement.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_transform ()
+  at utils.GetDistance (UnityEngine.GameObject x, UnityEngine.GameObject y) [0x00000] in <filename unknown>:0 
+  at utils.FindNearestPlayer (UnityEngine.GameObject seeker) [0x00000] in <filename unknown>:0 
+  at EnemyMovement.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
 
