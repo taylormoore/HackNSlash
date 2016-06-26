@@ -11,7 +11,6 @@ GameObject:
   - 212: {fileID: 21211978}
   - 58: {fileID: 5805742}
   - 114: {fileID: 11497598}
-  - 114: {fileID: 11475694}
   - 114: {fileID: 11429396}
   - 114: {fileID: 11490582}
   - 50: {fileID: 5056890}
@@ -78,26 +77,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementSpeed: 17
---- !u!114 &11475694
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 128702}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -1768714887, guid: 870353891bb340e2b2a9c8707e7419ba, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_TransformSyncMode: 1
-  m_SendInterval: 0.071428575
-  m_SyncRotationAxis: 7
-  m_RotationSyncCompression: 0
-  m_SyncSpin: 0
-  m_MovementTheshold: 0.001
-  m_SnapThreshold: 5
-  m_InterpolateRotation: 1
-  m_InterpolateMovement: 1
 --- !u!114 &11490582
 MonoBehaviour:
   m_ObjectHideFlags: 1

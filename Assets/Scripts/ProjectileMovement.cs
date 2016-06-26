@@ -11,7 +11,7 @@ public class ProjectileMovement : NetworkBehaviour {
 
 	public enum Direction {left, right, up, down};
 
-	Direction myDirection = Direction.left;
+	Direction myDirection;
 
     void OnEnable() {
         rigidBody = gameObject.GetComponent<Rigidbody2D>();
