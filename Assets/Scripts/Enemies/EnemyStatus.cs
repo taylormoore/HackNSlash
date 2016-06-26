@@ -26,9 +26,8 @@ public class EnemyStatus : NetworkBehaviour {
 
 	public void ApplyDamage(int value) {
         enemyHealth -= value;
-        Debug.Log("Enemy Health: " + enemyHealth);
         enemyUI.SetHealthUI(enemyHealth);
-        if (enemyHealth < 0) {
+        if (enemyHealth <= 0) {
             NetworkServer.Destroy(gameObject);
         }
 	}

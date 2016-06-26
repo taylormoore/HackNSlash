@@ -7,32 +7,41 @@ public class ProjectileMovement : NetworkBehaviour {
 	[SerializeField]
 	float movementSpeed;
 
+    Rigidbody2D rigidBody;
+
 	public enum Direction {left, right, up, down};
 
 	Direction myDirection = Direction.left;
+
+    void OnEnable() {
+        rigidBody = gameObject.GetComponent<Rigidbody2D>();
+    }
 
 	void Update() {
 
 		switch (myDirection) {
 			case Direction.left:
-			transform.Translate(Vector2.left * movementSpeed * Time.deltaTime);
-			break;
+                rigidBody.constraints = RigidbodyConstraints2D.FreezePositionY;
+    			transform.Translate(Vector2.left * movementSpeed * Time.deltaTime);
+    			break;
 
 			case Direction.right:
-			transform.Translate(Vector2.right * movementSpeed * Time.deltaTime);
-			break;
+                rigidBody.constraints = RigidbodyConstraints2D.FreezePositionY;
+    			transform.Translate(Vector2.right * movementSpeed * Time.deltaTime);
+    			break;
 
 			case Direction.up:
-			transform.Translate(Vector2.up * movementSpeed * Time.deltaTime);
-			break;
+                rigidBody.constraints = RigidbodyConstraints2D.FreezePositionX;
+    			transform.Translate(Vector2.up * movementSpeed * Time.deltaTime);
+    			break;
 
 			case Direction.down:
-			transform.Translate(Vector2.down * movementSpeed * Time.deltaTime);
-			break;
+                rigidBody.constraints = RigidbodyConstraints2D.FreezePositionX;
+    			transform.Translate(Vector2.down * movementSpeed * Time.deltaTime);
+    			break;
 
 			default:
-			Debug.Log("Aw shit bitch");
-			break;
+                break;
 		}	
 	}
 
