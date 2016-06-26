@@ -11,24 +11,36 @@ public class PlayerBasicAttack : NetworkBehaviour
 	void Update () {
 		if (Time.time > lastAttack + attackCooldown) {
 			if (PlayerInput.attackLeft) {
-				CmdShootProjectile(1);
+                GameObject projectileToShoot = (GameObject) Instantiate(projectile, transform.position, transform.rotation);
+                projectileToShoot.GetComponent<ProjectileMovement>().SetDirection(1);
+				CmdShootProjectile(projectileToShoot);
+                Destroy(projectileToShoot);
                 lastAttack = Time.time;
 			} else if (PlayerInput.attackRight) {
-				CmdShootProjectile(2);
+				GameObject projectileToShoot = (GameObject) Instantiate(projectile, transform.position, transform.rotation);
+                projectileToShoot.GetComponent<ProjectileMovement>().SetDirection(2);
+                CmdShootProjectile(projectileToShoot);
+                Destroy(projectileToShoot);
                 lastAttack = Time.time;
 			} else if (PlayerInput.attackUp) {
-				CmdShootProjectile(3);
+				GameObject projectileToShoot = (GameObject) Instantiate(projectile, transform.position, transform.rotation);
+                projectileToShoot.GetComponent<ProjectileMovement>().SetDirection(3);
+                CmdShootProjectile(projectileToShoot);
+                Destroy(projectileToShoot);
                 lastAttack = Time.time;
 			} else if (PlayerInput.attackDown) {
-				CmdShootProjectile(4);
+				GameObject projectileToShoot = (GameObject) Instantiate(projectile, transform.position, transform.rotation);
+                projectileToShoot.GetComponent<ProjectileMovement>().SetDirection(4);
+                CmdShootProjectile(projectileToShoot);
+                Destroy(projectileToShoot);
                 lastAttack = Time.time;
 			}
 		}
 	}
 
 	[Command]
-	void CmdShootProjectile(int directionID) {
-        GameObject projectileToShoot = (GameObject) Instantiate(projectile, transform.position, transform.rotation);
-        projectileToShoot.GetComponent<ProjectileMovement>().SetDirection(directionID);
+	void CmdShootProjectile(GameObject thisProjectile) {
+        GameObject projectileToShoot = (GameObject) Instantiate(thisProjectile, transform.position, transform.rotation);
+        Destroy(projectileToShoot, 3f);
 	}
 }
