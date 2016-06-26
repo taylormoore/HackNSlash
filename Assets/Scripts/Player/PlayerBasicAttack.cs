@@ -5,9 +5,8 @@ using System.Collections;
 public class PlayerBasicAttack : NetworkBehaviour 
 {	
 	public GameObject projectile;
-
-	float lastAttack = Time.time;
 	float attackCooldown = .4f;
+	float lastAttack = 0f;
 
 	void Update () {
 		if (Time.time > lastAttack + attackCooldown) {
