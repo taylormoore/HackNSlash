@@ -815,6 +815,9 @@
         <member name="T:Rewired.UI.UIPivot">
             <exclude></exclude>
         </member>
+        <member name="T:Rewired.Utils.Interfaces.IDeepCloneable">
+            <exclude></exclude>
+        </member>
         <member name="T:Rewired.Config.UpdateLoopSetting">
             <summary>
             The update loop(s) in which input will be updated.
@@ -2098,9 +2101,6 @@
         <member name="T:Rewired.Data.Mapping.HardwareJoystickMap.Platform">
             <exclude></exclude>
         </member>
-        <member name="T:Rewired.Utils.Interfaces.IDeepCloneable">
-            <exclude></exclude>
-        </member>
         <member name="P:Rewired.Data.Mapping.HardwareJoystickMap.Platform.isAllowed">
             <summary>
             Determines whether this map is allowed on the system. It incorporates Unity version checking or other type checking not dependent on the joystick.
@@ -2805,6 +2805,14 @@
             <summary>
             Maps an action to a controller element.
             </summary>
+        </member>
+        <member name="M:Rewired.ActionElementMap.IsValidMap(Rewired.ActionElementMap)">
+            <summary>
+            Determines if an ActionElementMap is valid.
+            Blank Action assignment is not considered invalid, but an Action Id that no longer exists is invalid.
+            </summary>
+            <param name="map">The ActionElementMap</param>
+            <returns></returns>
         </member>
         <member name="M:Rewired.ActionElementMap.#ctor(System.Int32,Rewired.ControllerElementType,Rewired.Pole,Rewired.KeyboardKeyCode,Rewired.ModifierKey,Rewired.ModifierKey,Rewired.ModifierKey)">
             <summary>

@@ -13,34 +13,36 @@ public class PlayerInput : MonoBehaviour
     }
 
     void Update() {
-        DetectInput();
+        DetectMovementInput();
+        DetectAttackInput();
     }
 
-    void DetectInput() {
-        horizontalAxis = player.GetAxisRaw("Move Horizontal");
+    void DetectMovementInput() {
+        horizontalAxis = player.GetAxisRaw("MoveHorizontal");
 
-        verticalAxis = player.GetAxisRaw("Move Vertical");
+        verticalAxis = player.GetAxisRaw("MoveVertical");
+    }
 
-        // Basic attack input.
-        if (player.GetAxisRaw("Attack Horizontal") > 0) {
+    void DetectAttackInput() {
+        if (player.GetAxisRaw("AttackHorizontal") > 0) {
             attackRight = true;
         } else {
             attackRight = false;
         }
 
-        if (player.GetAxisRaw("Attack Horizontal") < 0) {
+        if (player.GetAxisRaw("AttackHorizontal") < 0) {
             attackLeft = true;
         } else {
             attackLeft = false;
         }
 
-        if (player.GetAxisRaw("Attack Vertical") > 0) {
+        if (player.GetAxisRaw("AttackVertical") > 0) {
             attackUp = true;
         } else {
             attackUp = false;
         }
 
-        if (player.GetAxisRaw("Attack Vertical") < 0) {
+        if (player.GetAxisRaw("AttackVertical") < 0) {
             attackDown = true;
         } else {
             attackDown = false;

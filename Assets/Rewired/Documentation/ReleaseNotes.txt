@@ -1,3 +1,30 @@
+1.0.0.89:
+
+    Changes:
+      - When loading Controller Maps from saved XML data, ActionElementMaps are now validated to ensure the Action Id referenced still exists and is discarded if not.
+      - Added Axis Data Format to HardwareJoystickMap
+      - Updated controller definitions for changes in Fire OS 5. Fire OS versions prior to 5 are no longer supported.
+
+    Changed Controller Definitions:
+      - Added Amazon Fire TV mapping to Nyko Playpad definition
+      - Removed Amazon Fire TV definition for the following controllers due to changes to Fire OS 5. The default Android definition will now be used for these controllers on Fire OS.
+        - 8Bitdo NES30 (joystick mode)
+        - 8Bitdo NES30 (gamepad mode)
+        - 8Bitdo SNES30 (joystick mode)
+        - 8Bitdo SNES30 (gamepad mode)
+        - GameStick Controller
+        - MadCatz C.T.R.L.R
+        - MadCatz Micro C.T.R.L.R
+        - Moga Hero Power
+        - Moga Pro Power
+        - Red Samurai Wireless Gamepad
+        - Samsung EI-GP20
+        - SteelSeries Free
+        - SteelSeries Stratus XL (HID)
+
+    Bug Fixes:
+      - Windows Standalone: Fixed very rare issue where left mouse button could get stuck in an on state until clicked again when switching from the desktop back to the application using the task bar when Native Mouse Handling option is enabled.
+
 1.0.0.88:
 
     Changes:
