@@ -18,7 +18,10 @@ public class ProjectileMovement : NetworkBehaviour {
         rigidBody = gameObject.GetComponent<Rigidbody2D>();
     }
 
-	void Update() {
+	void FixedUpdate() {
+        if (!base.isServer)
+             return;
+             
 		switch (myDirection) {
 			case Direction.left:
                 rigidBody.constraints = RigidbodyConstraints2D.FreezePositionY;

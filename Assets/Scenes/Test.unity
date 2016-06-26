@@ -85,79 +85,6 @@ NavMeshSettings:
     cellSize: 0.16666667
     manualCellSize: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &72537099
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 72537102}
-  - 114: {fileID: 72537101}
-  - 114: {fileID: 72537100}
-  m_Layer: 0
-  m_Name: NetworkSpawner
-  m_TagString: NetworkSpawner
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &72537100
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 72537099}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9bbd05c132a0994b958978acc5160db, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &72537101
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 72537099}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 372142912, guid: 870353891bb340e2b2a9c8707e7419ba, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_SceneId:
-    m_Value: 0
-  m_AssetId:
-    i0: 0
-    i1: 0
-    i2: 0
-    i3: 0
-    i4: 0
-    i5: 0
-    i6: 0
-    i7: 0
-    i8: 0
-    i9: 0
-    i10: 0
-    i11: 0
-    i12: 0
-    i13: 0
-    i14: 0
-    i15: 0
-  m_ServerOnly: 0
-  m_LocalPlayerAuthority: 0
---- !u!4 &72537102
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 72537099}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.365433, y: 0.31957442, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 6
 --- !u!1 &258980247
 GameObject:
   m_ObjectHideFlags: 0
@@ -418,8 +345,8 @@ MonoBehaviour:
       defaultJoystickAxis2DDeadZoneType: 1
     players:
     - _id: 9999999
-      _name: System
-      _descriptiveName: System
+      _name: 53797374656d
+      _descriptiveName: 53797374656d
       _startPlaying: 1
       _defaultJoystickMaps: []
       _defaultMouseMaps: []
@@ -429,8 +356,8 @@ MonoBehaviour:
       _assignMouseOnStart: 1
       _excludeFromControllerAutoAssignment: 1
     - _id: 1
-      _name: Player
-      _descriptiveName: Player
+      _name: 506c61796572
+      _descriptiveName: 506c61796572
       _startPlaying: 1
       _defaultJoystickMaps:
       - _enabled: 1
@@ -447,44 +374,44 @@ MonoBehaviour:
       _excludeFromControllerAutoAssignment: 0
     actions:
     - _id: 0
-      _name: Move Horizontal
+      _name: 4d6f766520486f72697a6f6e74616c
       _type: 0
-      _descriptiveName: Move Horizontal
-      _positiveDescriptiveName: Right
-      _negativeDescriptiveName: Left
+      _descriptiveName: 4d6f766520486f72697a6f6e74616c
+      _positiveDescriptiveName: 5269676874
+      _negativeDescriptiveName: 4c656674
       _behaviorId: 0
       _userAssignable: 1
       _categoryId: 0
     - _id: 1
-      _name: Move Vertical
+      _name: 4d6f766520566572746963616c
       _type: 0
-      _descriptiveName: Move Vertical
-      _positiveDescriptiveName: Up
-      _negativeDescriptiveName: Down
+      _descriptiveName: 4d6f766520566572746963616c
+      _positiveDescriptiveName: 5570
+      _negativeDescriptiveName: 446f776e
       _behaviorId: 0
       _userAssignable: 1
       _categoryId: 0
     - _id: 2
-      _name: Attack Horizontal
+      _name: 41747461636b20486f72697a6f6e74616c
       _type: 0
-      _descriptiveName: Attack Horizontal
-      _positiveDescriptiveName: Attack Right
-      _negativeDescriptiveName: Attack Left
+      _descriptiveName: 41747461636b20486f72697a6f6e74616c
+      _positiveDescriptiveName: 41747461636b205269676874
+      _negativeDescriptiveName: 41747461636b204c656674
       _behaviorId: 0
       _userAssignable: 1
       _categoryId: 0
     - _id: 3
-      _name: Attack Vertical
+      _name: 41747461636b20566572746963616c
       _type: 0
-      _descriptiveName: Attack Vertical
-      _positiveDescriptiveName: Attack Up
-      _negativeDescriptiveName: Attack Down
+      _descriptiveName: 41747461636b20566572746963616c
+      _positiveDescriptiveName: 41747461636b205570
+      _negativeDescriptiveName: 41747461636b20446f776e
       _behaviorId: 0
       _userAssignable: 1
       _categoryId: 0
     actionCategories:
-    - _name: Default
-      _descriptiveName: Default
+    - _name: 44656661756c74
+      _descriptiveName: 44656661756c74
       _tag: 
       _id: 0
       _userAssignable: 1
@@ -494,7 +421,7 @@ MonoBehaviour:
         actionIds: 00000000010000000200000003000000
     inputBehaviors:
     - _id: 0
-      _name: Default
+      _name: 44656661756c74
       _joystickAxisSensitivity: 1
       _digitalAxisSnap: 1
       _digitalAxisInstantReverse: 0
@@ -509,36 +436,37 @@ MonoBehaviour:
       _buttonDoublePressSpeed: 0.3
       _buttonDeadZone: 0.5
       _buttonDownBuffer: 0
+      _uniqueId: 0
     mapCategories:
-    - _name: Default
-      _descriptiveName: Default
+    - _name: 44656661756c74
+      _descriptiveName: 44656661756c74
       _tag: 
       _id: 0
       _userAssignable: 1
       _checkConflictsWithAllCategories: 1
       _checkConflictsCategoryIds: 
     joystickLayouts:
-    - _name: Default
-      _descriptiveName: Default
+    - _name: 44656661756c74
+      _descriptiveName: 44656661756c74
       _id: 0
     keyboardLayouts:
-    - _name: Default
-      _descriptiveName: Default
+    - _name: 44656661756c74
+      _descriptiveName: 44656661756c74
       _id: 0
     mouseLayouts:
-    - _name: Default
-      _descriptiveName: Default
+    - _name: 44656661756c74
+      _descriptiveName: 44656661756c74
       _id: 0
     customControllerLayouts:
-    - _name: Default
-      _descriptiveName: Default
+    - _name: 44656661756c74
+      _descriptiveName: 44656661756c74
       _id: 0
     joystickMaps:
     - id: 0
       categoryId: 0
       layoutId: 0
       name: 
-      hardwareGuidString: 83b427e4-086f-47f3-bb06-be266abd1ca5
+      hardwareGuidString: 38336234323765342d303836662d343766332d626230362d626532363661626431636135
       customControllerUid: 0
       actionElementMaps:
       - _actionCategoryId: 0
@@ -744,6 +672,13 @@ MonoBehaviour:
     customControllerIdCounter: 0
   _controllerDataFiles: {fileID: 11400000, guid: d21d2b20df8369642b76aafbb2576ba7,
     type: 2}
+  isCompiling: 0
+  initialized: 0
+  criticalError: 0
+  editorPlatform: 0
+  platform: 0
+  webplayerPlatform: 0
+  isEditor: 0
 --- !u!4 &975772691
 Transform:
   m_ObjectHideFlags: 0
