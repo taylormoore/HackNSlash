@@ -11,14 +11,13 @@ public class ProjectileMovement : NetworkBehaviour {
 
 	public enum Direction {left, right, up, down};
 
-	Direction myDirection;
+	Direction myDirection = Direction.left;
 
     void OnEnable() {
         rigidBody = gameObject.GetComponent<Rigidbody2D>();
     }
 
 	void Update() {
-
 		switch (myDirection) {
 			case Direction.left:
                 rigidBody.constraints = RigidbodyConstraints2D.FreezePositionY;
@@ -42,31 +41,55 @@ public class ProjectileMovement : NetworkBehaviour {
 
 			default:
                 break;
-		}	
-	}
-
-	[Command]
-	public void CmdSetDirection(int direction) {
-		switch (direction) {
-			case 1:
-			myDirection = Direction.left;
-			break;
-
-			case 2:
-			myDirection = Direction.right;
-			break;
-
-			case 3:
-			myDirection = Direction.up;
-			break;
-
-			case 4:
-			myDirection = Direction.down;
-			break;
-
-			default:
-			Debug.Log("Setting direction failed");
-			break;
 		}
 	}
+
+    public void SetDirection(int direction) {
+        switch (direction) {
+            case 1:
+            myDirection = Direction.left;
+            break;
+
+            case 2:
+            myDirection = Direction.right;
+            break;
+
+            case 3:
+            myDirection = Direction.up;
+            break;
+
+            case 4:
+            myDirection = Direction.down;
+            break;
+
+            default:
+            Debug.Log("Setting direction failed");
+            break;
+        }
+    }
+
+	[Command]
+    public void CmdSetDirection(int direction) {
+        switch (direction) {
+            case 1:
+            myDirection = Direction.left;
+            break;
+
+            case 2:
+            myDirection = Direction.right;
+            break;
+
+            case 3:
+            myDirection = Direction.up;
+            break;
+
+            case 4:
+            myDirection = Direction.down;
+            break;
+
+            default:
+            Debug.Log("Setting direction failed");
+            break;
+        }
+    }
 }
