@@ -13,34 +13,28 @@ public class PlayerBasicAttack : NetworkBehaviour
 			if (PlayerInput.attackLeft) {
                 GameObject projectileToShoot = (GameObject) Instantiate(projectile, transform.position, transform.rotation);
                 projectileToShoot.GetComponent<ProjectileMovement>().SetDirection(1);
-				CmdShootProjectile(projectileToShoot);
+				PlayerReference.networkManager.SendMessage("CmdShootProjectile", new Object[] {projectileToShoot, gameObject.transform});
                 Destroy(projectileToShoot);
                 lastAttack = Time.time;
 			} else if (PlayerInput.attackRight) {
 				GameObject projectileToShoot = (GameObject) Instantiate(projectile, transform.position, transform.rotation);
                 projectileToShoot.GetComponent<ProjectileMovement>().SetDirection(2);
-                CmdShootProjectile(projectileToShoot);
+                PlayerReference.networkManager.SendMessage("CmdShootProjectile", new Object[] {projectileToShoot, gameObject.transform});
                 Destroy(projectileToShoot);
                 lastAttack = Time.time;
 			} else if (PlayerInput.attackUp) {
 				GameObject projectileToShoot = (GameObject) Instantiate(projectile, transform.position, transform.rotation);
                 projectileToShoot.GetComponent<ProjectileMovement>().SetDirection(3);
-                CmdShootProjectile(projectileToShoot);
+                PlayerReference.networkManager.SendMessage("CmdShootProjectile", new Object[] {projectileToShoot, gameObject.transform});
                 Destroy(projectileToShoot);
                 lastAttack = Time.time;
 			} else if (PlayerInput.attackDown) {
 				GameObject projectileToShoot = (GameObject) Instantiate(projectile, transform.position, transform.rotation);
                 projectileToShoot.GetComponent<ProjectileMovement>().SetDirection(4);
-                CmdShootProjectile(projectileToShoot);
+                PlayerReference.networkManager.SendMessage("CmdShootProjectile", new Object[] {projectileToShoot, gameObject.transform});
                 Destroy(projectileToShoot);
                 lastAttack = Time.time;
 			}
 		}
-	}
-
-	[Command]
-	void CmdShootProjectile(GameObject thisProjectile) {
-        GameObject projectileToShoot = (GameObject) Instantiate(thisProjectile, transform.position, transform.rotation);
-        Destroy(projectileToShoot, 3f);
 	}
 }

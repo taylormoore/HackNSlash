@@ -11,6 +11,7 @@ public class ProjectileMovement : NetworkBehaviour {
 
 	public enum Direction {left, right, up, down};
 
+    [SerializeField]
 	Direction myDirection = Direction.left;
 
     void OnEnable() {
