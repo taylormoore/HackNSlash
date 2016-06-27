@@ -1,7 +1,6 @@
-﻿using UnityEngine;
-using System.Collections;
+﻿using System.Collections.Generic;
+using UnityEngine;
 using UnityEngine.Networking;
-using System.Collections.Generic;
 
 public class NetworkManagerSpawner : NetworkBehaviour {
 
@@ -10,16 +9,16 @@ public class NetworkManagerSpawner : NetworkBehaviour {
     public Transform[] playerSpawnLocations;
     private int[] playerSpawnLocationIndicies;
     private int[] enemySpawnLocationIndicies;
-	// Use this for initialization
+
     bool spawned = false;
-	void FixedUpdate() {
+    void FixedUpdate() {
         if (!spawned && NetworkServer.active) {
             CmdSpawnEnemies();
             MovePlayers();
             spawned = true;
         }
-        
-	}
+
+    }
 
     void CmdSpawnEnemies() {
         enemySpawnLocationIndicies = new int[enemySpawnLocations.Length];
@@ -34,8 +33,8 @@ public class NetworkManagerSpawner : NetworkBehaviour {
             NetworkServer.Spawn(enemy);
         }
     }
-	
-	void MovePlayers() {
+
+    void MovePlayers() {
         Debug.Log("Here 2");
         playerSpawnLocationIndicies = new int[playerSpawnLocations.Length];
         for (int i = 0; i < playerSpawnLocations.Length; i++) {

@@ -1,11 +1,8 @@
 ﻿using UnityEngine;
-using System.Collections;
-using UnityEngine.SceneManagement;
 using UnityEngine.Networking;
 
 public class SceneChangingPortal : MonoBehaviour {
-
-	public string nextSceneName;
+    public string nextSceneName;
 
     public void OnTriggerEnter2D(Collider2D other) {
         nextSceneName = "Scenes/" + nextSceneName;
