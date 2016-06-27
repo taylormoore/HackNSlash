@@ -43,6 +43,12 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Environment Background
+    uniqueID: 2028907419
+    locked: 0
+  - name: Environment Objects
+    uniqueID: 3284182123
+    locked: 0
   - name: Enemy
     uniqueID: 2508814467
     locked: 0
