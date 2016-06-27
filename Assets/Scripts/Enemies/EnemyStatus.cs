@@ -5,12 +5,11 @@ using UnityEngine.Networking;
 public class EnemyStatus : NetworkBehaviour {
 
 	[SyncVar(hook="SetHealth")]
-    private int enemyHealth;
+    public int enemyHealth;
 
     EnemyUI enemyUI;
 
-    void Awake() {
-        enemyHealth = 500;
+    void OnEnable() {
         enemyUI = GetComponent<EnemyUI>();
         enemyUI.SetHealthUI(enemyHealth);
     }
@@ -20,14 +19,11 @@ public class EnemyStatus : NetworkBehaviour {
         enemyUI.SetHealthUI(enemyHealth);
     }
 
-    void OnBecameInvisible() {
-        enemyUI.SetHealthUI(enemyHealth);
-    }
-
 	public void ApplyDamage(int value) {
         enemyHealth -= value;
         enemyUI.SetHealthUI(enemyHealth);
         if (enemyHealth <= 0) {
+            Debug.Log("sup ladies");
             NetworkServer.Destroy(gameObject);
         }
 	}

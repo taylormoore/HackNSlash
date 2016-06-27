@@ -26,4 +26,14 @@ public static class utils {
     public static float GetDistance(GameObject x, GameObject y) {
         return Vector2.Distance(x.transform.position, y.transform.position);
     }
+
+    public static int[] Shuffle(int[] arrayToBeShuffled) {
+        for (int i = 0; i < arrayToBeShuffled.Length; i++) {
+            int temp = arrayToBeShuffled[i];
+            int r = Random.Range(i, arrayToBeShuffled.Length);
+            arrayToBeShuffled[i] = arrayToBeShuffled[r];
+            arrayToBeShuffled[r] = temp;
+        }
+        return arrayToBeShuffled;
+    }
 }

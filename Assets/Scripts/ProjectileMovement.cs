@@ -12,9 +12,8 @@ public class ProjectileMovement : NetworkBehaviour {
 
     public void UpdateDirection(int direction) {
         myDirection = direction;
-        Debug.Log(direction);
     }
-    
+
 	void FixedUpdate() {
 
 		switch (myDirection) {
