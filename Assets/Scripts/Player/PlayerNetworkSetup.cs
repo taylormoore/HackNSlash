@@ -5,7 +5,7 @@ using UnityEngine.Networking;
 public class PlayerNetworkSetup : NetworkBehaviour {
 
 	void Start() {
-		DontDestroyOnLoad(transform.gameObject);
+		DontDestroyOnLoad(gameObject);
 		if (isLocalPlayer) {
 			GetComponent<PlayerMovement>().enabled = true;
 			GetComponent<PlayerInput>().enabled = true;
@@ -18,7 +18,9 @@ public class PlayerNetworkSetup : NetworkBehaviour {
 	}
 
 	public void SceneChange() {
+		Debug.Log("Here");
 		if (isLocalPlayer) {
+			Debug.Log("Queer");
 			Camera2DFollow camera = Camera.main.GetComponent<Camera2DFollow>();
 			camera.enabled = true;
 			camera.target = gameObject.transform;
