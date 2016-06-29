@@ -4,25 +4,25 @@ using System.Collections;
 public class EnemyMovement : MonoBehaviour {
 
 	[SerializeField]
-    int movementSpeed;
+	int movementSpeed;
 
-    GameObject nearestPlayer;
+	GameObject nearestPlayer;
 
-    void Update() {
-        MoveTowardsNearestPlayer();
-    }
+	void Update() {
+		MoveTowardsNearestPlayer();
+	}
 
-    void FixedUpdate() {
-        nearestPlayer = utils.FindNearestPlayer(gameObject);
-    }
+	void FixedUpdate() {
+		nearestPlayer = utils.FindNearestPlayer(gameObject);
+	}
 
-    void MoveTowardsNearestPlayer() {
-        if (nearestPlayer == null) {
-            return;
-        }
+	void MoveTowardsNearestPlayer() {
+		if (nearestPlayer == null) {
+			return;
+		}
 
-        transform.position = Vector2.MoveTowards(transform.position, nearestPlayer.transform.position, .02f);
-    }
+		transform.position = Vector2.MoveTowards(transform.position, nearestPlayer.transform.position, .02f);
+	}
 
 
 }
