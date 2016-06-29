@@ -6,8 +6,7 @@ public class PlayerMovement : NetworkBehaviour {
 
 	public Sprite facingUp, facingDown, facingLeft, facingRight;
 	public float movementSpeed;
-	SpriteRenderer spriteRenderer;
-	[SyncVar] Sprite currentSprite;
+	[SyncVar] SpriteRenderer spriteRenderer;
 
 	void Awake() {
 		spriteRenderer = GetComponent<SpriteRenderer>();
@@ -29,8 +28,9 @@ public class PlayerMovement : NetworkBehaviour {
 		transform.Translate(Vector2.up * Time.deltaTime * PlayerInput.verticalAxis * movementSpeed);
 		transform.Translate(Vector2.right * Time.deltaTime * PlayerInput.horizontalAxis * movementSpeed);
 	}
+	
+	[Command]
 	private void CmdChangeSprite(Sprite newSprite) {
-		currentSprite = newSprite;
 		spriteRenderer.sprite = newSprite;
 	}
 }
