@@ -2,6 +2,7 @@
 using UnityEngine.Networking;
 
 public class SceneChangingPortal : MonoBehaviour {
+
 	public string nextSceneName;
 
 	public void OnTriggerEnter2D(Collider2D other) {

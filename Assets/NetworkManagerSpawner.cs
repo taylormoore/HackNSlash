@@ -32,8 +32,8 @@ public class NetworkManagerSpawner : NetworkBehaviour {
 		utils.Shuffle(ref playerSpawnLocations);
 		List<GameObject> players = PlayerReference.GetPlayers();
 		for (int i = 0; i < players.Count; i++) {
-			players[i].SendMessage("SceneChange");
 			players[i].transform.position = playerSpawnLocations[i].position;
+			players[i].SendMessage("SceneChange");
 		}
 	}
 }
