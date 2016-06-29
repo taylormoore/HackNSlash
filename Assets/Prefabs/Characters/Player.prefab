@@ -138,7 +138,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 194068}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b938f286ba05e8c4598163f8203e3d5e, type: 3}
   m_Name: 
@@ -181,10 +181,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f3eddb2f4c1658f4684bb91403328dfa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  facingUp: {fileID: 21300000, guid: 14398d56a4df5aa4e9fe6bdad0b8a3bd, type: 3}
-  facingDown: {fileID: 21300002, guid: 14398d56a4df5aa4e9fe6bdad0b8a3bd, type: 3}
-  facingLeft: {fileID: 21300004, guid: 14398d56a4df5aa4e9fe6bdad0b8a3bd, type: 3}
-  facingRight: {fileID: 21300006, guid: 14398d56a4df5aa4e9fe6bdad0b8a3bd, type: 3}
   movementSpeed: 8
 --- !u!212 &21249824
 SpriteRenderer:
