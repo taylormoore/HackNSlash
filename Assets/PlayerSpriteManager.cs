@@ -5,29 +5,27 @@ using UnityEngine.Networking;
 public class PlayerSpriteManager : NetworkBehaviour {
 
 	public Sprite facingUp, facingDown, facingLeft, facingRight;
-	[SyncVar] SpriteRenderer spriteRenderer;
 
-	void Awake() {
+	[SyncVar]
+	SpriteRenderer spriteRenderer;
+
+	void Start() {
 		if (isLocalPlayer) {
 			spriteRenderer = GetComponent<SpriteRenderer>();
-			CmdChangeSprite(facingDown);
+			Debug.Log("Here, Sprite Renderer: " + spriteRenderer);
 		}
 	}
 
 	void Update() {
-		if (isLocalPlayer) {
+		if (isLocalPlayer && spriteRenderer != null) {
 			if (PlayerInput.horizontalAxis > .35f) {
-				spriteRenderer.sprite = facingRight;
 				CmdChangeSprite(facingRight);
 			} else if (PlayerInput.horizontalAxis < -.35f) {
-				spriteRenderer.sprite = facingLeft;
 				CmdChangeSprite(facingLeft);
 			}
 			if (PlayerInput.verticalAxis > .35f) {
-				spriteRenderer.sprite = facingUp;
 				CmdChangeSprite(facingUp);
 			} else if (PlayerInput.verticalAxis < -.35f) {
-				spriteRenderer.sprite = facingDown;
 				CmdChangeSprite(facingDown);
 			}
 		}

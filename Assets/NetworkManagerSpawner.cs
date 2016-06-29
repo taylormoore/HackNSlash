@@ -9,6 +9,7 @@ public class NetworkManagerSpawner : NetworkBehaviour {
 	public Transform[] playerSpawnLocations;
 
 	bool spawned = false;
+
 	void FixedUpdate() {
 		if (!spawned && NetworkServer.active) {
 			CmdSpawnEnemies();
