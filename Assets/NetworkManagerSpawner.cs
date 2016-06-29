@@ -7,8 +7,6 @@ public class NetworkManagerSpawner : NetworkBehaviour {
 	public GameObject[] enemiesToSpawn;
 	public GameObject[] enemySpawnLocations;
 	public Transform[] playerSpawnLocations;
-	private int[] playerSpawnLocationIndicies;
-	private int[] enemySpawnLocationIndicies;
 
 	bool spawned = false;
 	void FixedUpdate() {
@@ -20,29 +18,21 @@ public class NetworkManagerSpawner : NetworkBehaviour {
 	}
 
 	void CmdSpawnEnemies() {
-		enemySpawnLocationIndicies = new int[enemySpawnLocations.Length];
-		for (int i = 0; i < enemySpawnLocations.Length; i++) {
-			enemySpawnLocationIndicies[i] = i;
-		}
-		utils.Shuffle(ref enemySpawnLocationIndicies);
+		utils.Shuffle(ref enemySpawnLocations);
 		for (int i = 0; i < enemiesToSpawn.Length; i++) {
 			GameObject enemy = (GameObject) Instantiate(enemiesToSpawn[i],
-				enemySpawnLocations[enemySpawnLocationIndicies[i]].transform.position,
-				enemySpawnLocations[enemySpawnLocationIndicies[i]].transform.rotation);
+				enemySpawnLocations[i].transform.position,
+				enemySpawnLocations[i].transform.rotation);
 			NetworkServer.Spawn(enemy);
 		}
 	}
 
 	void MovePlayers() {
-		playerSpawnLocationIndicies = new int[playerSpawnLocations.Length];
-		for (int i = 0; i < playerSpawnLocations.Length; i++) {
-			playerSpawnLocationIndicies[i] = i;
-		}
-		utils.Shuffle(ref playerSpawnLocationIndicies);
+		utils.Shuffle(ref playerSpawnLocations);
 		List<GameObject> players = PlayerReference.GetPlayers();
 		for (int i = 0; i < players.Count; i++) {
 			players[i].SendMessage("SceneChange");
-			players[i].transform.position = playerSpawnLocations[playerSpawnLocationIndicies[i]].position;
+			players[i].transform.position = playerSpawnLocations[i].position;
 		}
 	}
 }
