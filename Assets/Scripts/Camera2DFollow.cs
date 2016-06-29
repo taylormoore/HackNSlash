@@ -15,6 +15,7 @@ public class Camera2DFollow : MonoBehaviour {
 	private Vector3 m_LookAheadPos;
 
 	private void Start() {
+		DontDestroyOnLoad(gameObject);
 		m_LastTargetPosition = target.position;
 		m_OffsetZ = (transform.position - target.position).z;
 		transform.parent = null;
