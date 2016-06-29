@@ -15,15 +15,21 @@ public class PlayerSpriteManager : NetworkBehaviour {
 	}
 
 	void Update() {
-		if (PlayerInput.horizontalAxis > .35f) {
-			CmdChangeSprite(facingRight);
-		} else if (PlayerInput.horizontalAxis < -.35f) {
-			CmdChangeSprite(facingLeft);
-		}
-		if (PlayerInput.verticalAxis > .35f) {
-			CmdChangeSprite(facingUp);
-		} else if (PlayerInput.verticalAxis < -.35f) {
-			CmdChangeSprite(facingDown);
+		if (isLocalPlayer) {
+			if (PlayerInput.horizontalAxis > .35f) {
+				spriteRenderer.sprite = facingRight;
+				CmdChangeSprite(facingRight);
+			} else if (PlayerInput.horizontalAxis < -.35f) {
+				spriteRenderer.sprite = facingLeft;
+				CmdChangeSprite(facingLeft);
+			}
+			if (PlayerInput.verticalAxis > .35f) {
+				spriteRenderer.sprite = facingUp;
+				CmdChangeSprite(facingUp);
+			} else if (PlayerInput.verticalAxis < -.35f) {
+				spriteRenderer.sprite = facingDown;
+				CmdChangeSprite(facingDown);
+			}
 		}
 	}
 
@@ -31,7 +37,6 @@ public class PlayerSpriteManager : NetworkBehaviour {
 	private void CmdChangeSprite(Sprite newSprite) {
 		if (spriteRenderer == null)
 			return;
-
 		spriteRenderer.sprite = newSprite;
 	}
 }
