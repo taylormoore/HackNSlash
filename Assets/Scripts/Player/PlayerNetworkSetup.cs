@@ -18,10 +18,6 @@ public class PlayerNetworkSetup : NetworkBehaviour {
     }
 
     public void SceneChange() {
-        if (isLocalPlayer) {
-            Camera2DFollow camera = Camera.main.GetComponent<Camera2DFollow>();
-            camera.enabled = true;
-            camera.target = gameObject.transform;
-        }
+        
     }
 }

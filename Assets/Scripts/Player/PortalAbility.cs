@@ -23,7 +23,6 @@ public class PortalAbility : NetworkBehaviour {
 		}
 	}
 
-
 	// Creates portal if we are not in hub world and if cooldown is up.
 	[Command]
 	void CmdCastPortal() {
