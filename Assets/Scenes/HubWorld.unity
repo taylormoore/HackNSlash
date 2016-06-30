@@ -96,6 +96,8 @@ GameObject:
   - 114: {fileID: 188769018}
   - 114: {fileID: 188769017}
   - 114: {fileID: 188769016}
+  - 114: {fileID: 188769021}
+  - 114: {fileID: 188769020}
   m_Layer: 0
   m_Name: Player Input
   m_TagString: Untagged
@@ -149,6 +151,28 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 6
+--- !u!114 &188769020
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 188769015}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 280097d91c6f0664b8423ae10baea815, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &188769021
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 188769015}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a552ce507235424699b16c3415979de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &249852921
 GameObject:
   m_ObjectHideFlags: 0
@@ -1005,6 +1029,15 @@ MonoBehaviour:
       _behaviorId: 0
       _userAssignable: 1
       _categoryId: 0
+    - _id: 4
+      _name: Portal
+      _type: 1
+      _descriptiveName: Portal
+      _positiveDescriptiveName: 
+      _negativeDescriptiveName: 
+      _behaviorId: 0
+      _userAssignable: 1
+      _categoryId: 0
     actionCategories:
     - _name: Default
       _descriptiveName: Default
@@ -1014,7 +1047,7 @@ MonoBehaviour:
     actionCategoryMap:
       list:
       - categoryId: 0
-        actionIds: 00000000010000000200000003000000
+        actionIds: 0000000001000000020000000300000004000000
     inputBehaviors:
     - _id: 0
       _name: Default
@@ -1248,11 +1281,22 @@ MonoBehaviour:
         _modifierKey1: 0
         _modifierKey2: 0
         _modifierKey3: 0
+      - _actionCategoryId: 0
+        _actionId: 4
+        _elementType: 1
+        _elementIdentifierId: -1
+        _axisRange: 0
+        _invert: 0
+        _axisContribution: 0
+        _keyboardKeyCode: 116
+        _modifierKey1: 0
+        _modifierKey2: 0
+        _modifierKey3: 0
     mouseMaps: []
     customControllerMaps: []
     customControllers: []
     playerIdCounter: 3
-    actionIdCounter: 4
+    actionIdCounter: 5
     actionCategoryIdCounter: 1
     inputBehaviorIdCounter: 1
     mapCategoryIdCounter: 1
@@ -1343,6 +1387,10 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 11450946, guid: abf3bf84ee0c54540997634bc60b7b2d, type: 2}
+      propertyPath: m_SpawnPrefabs.Array.size
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 492440, guid: abf3bf84ee0c54540997634bc60b7b2d, type: 2}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -1383,6 +1431,10 @@ Prefab:
       propertyPath: m_CustomConfig
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 11450946, guid: abf3bf84ee0c54540997634bc60b7b2d, type: 2}
+      propertyPath: m_SpawnPrefabs.Array.data[5]
+      value: 
+      objectReference: {fileID: 141328, guid: 06cb8c61989b58f49947f5313b4e1f3e, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: abf3bf84ee0c54540997634bc60b7b2d, type: 2}
   m_IsPrefabParent: 0
