@@ -1,20 +1,28 @@
 ﻿using UnityEngine;
 using UnityEngine.Networking;
+using UnityEngine.SceneManagement;
 
-public class SceneChangingPortal : MonoBehaviour {
+public class SceneChangingPortal : NetworkBehaviour {
 
     public string nextSceneName;
 
     public void OnTriggerEnter2D(Collider2D other) {
-        string nextScene = "Scenes/" + nextSceneName;
         if (other.gameObject.tag == "Player") {
 			GameObject[] players = PlayerReference.GetPlayers().ToArray();
-            GameObject.FindWithTag("NetworkManager")
-                .GetComponent<NetworkManager>()
-                .ServerChangeScene(nextScene);
+			RpcChangeScene();
 			for (int i = 0; i < NetworkServer.connections.Count; i++) {
 				NetworkServer.SetClientReady(NetworkServer.connections[i]);
 			}
 		}
     }
+
+	[ClientRpc]
+	void RpcChangeScene() {
+		string nextScene = "Scenes/" + nextSceneName;
+		SceneManager.LoadScene(nextScene);
+		GameObject.FindWithTag("NetworkManager")
+				.GetComponent<NetworkManager>()
+				.ServerChangeScene(nextScene);
+
+	}
 }
