@@ -11,12 +11,11 @@ public class SceneChangingPortal : NetworkBehaviour {
 			return;
 		}
 		string nextScene = "Scenes/" + nextSceneName;
+		NetworkServer.SetAllClientsNotReady();
 		GameObject.FindWithTag("NetworkManager")
 				.GetComponent<NetworkManager>()
 				.ServerChangeScene(nextScene);
-		//for (int i = 0; i < NetworkServer.connections.Count; i++) {
-		//	NetworkServer.SetClientReady(NetworkServer.connections[i]);
-		//}
+
 	}
 
 	void OnLeveLWasLoaded(int level) {
