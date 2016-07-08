@@ -9,20 +9,23 @@ public class SceneChangingPortal : NetworkBehaviour {
     public void OnTriggerEnter2D(Collider2D other) {
         if (other.gameObject.tag == "Player") {
 			GameObject[] players = PlayerReference.GetPlayers().ToArray();
-			RpcChangeScene();
-			for (int i = 0; i < NetworkServer.connections.Count; i++) {
-				NetworkServer.SetClientReady(NetworkServer.connections[i]);
-			}
+			CmdChangeScene();
+			//for (int i = 0; i < NetworkServer.connections.Count; i++) {
+			//	NetworkServer.SetClientReady(NetworkServer.connections[i]);
+			//}
 		}
     }
 
-	[ClientRpc]
-	void RpcChangeScene() {
+	void OnLeveLWasLoaded(int level) {
 		string nextScene = "Scenes/" + nextSceneName;
-		SceneManager.LoadScene(nextScene);
 		GameObject.FindWithTag("NetworkManager")
 				.GetComponent<NetworkManager>()
 				.ServerChangeScene(nextScene);
+	}
 
+	[Command]
+	void CmdChangeScene() {
+		string nextScene = "Scenes/" + nextSceneName;
+		SceneManager.LoadScene(nextScene);
 	}
 }
