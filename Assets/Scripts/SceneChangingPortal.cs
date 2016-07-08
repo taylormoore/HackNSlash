@@ -12,8 +12,8 @@ public class SceneChangingPortal : MonoBehaviour {
             GameObject.FindWithTag("NetworkManager")
                 .GetComponent<NetworkManager>()
                 .ServerChangeScene(nextScene);
-			for (int i = 0; i < players.Length; i++) {
-				
+			for (int i = 0; i < NetworkServer.connections.Count; i++) {
+				NetworkServer.SetClientReady(NetworkServer.connections[i]);
 			}
 		}
     }
