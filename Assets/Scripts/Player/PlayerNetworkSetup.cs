@@ -4,9 +4,8 @@ using UnityEngine.Networking;
 public class PlayerNetworkSetup : NetworkBehaviour {
 
     void Start() {
-        DontDestroyOnLoad(gameObject);
         if (isLocalPlayer) {
-            GetComponent<PlayerMovement>().enabled = true;
+			GetComponent<PlayerMovement>().enabled = true;
             GetComponent<PlayerBasicAttack>().enabled = true;
             GetComponent<PortalAbility>().enabled = true;
             Camera2DFollow camera = Camera.main.GetComponent<Camera2DFollow>();

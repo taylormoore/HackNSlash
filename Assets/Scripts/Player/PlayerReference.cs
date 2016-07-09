@@ -1,6 +1,5 @@
 ﻿using UnityEngine;
 using System.Collections.Generic;
-using UnityEngine.Networking;
 
 public static class PlayerReference {
 

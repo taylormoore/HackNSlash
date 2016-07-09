@@ -10,6 +10,7 @@ GameObject:
   - 4: {fileID: 492440}
   - 114: {fileID: 11450946}
   - 114: {fileID: 11440772}
+  - 114: {fileID: 11437370}
   m_Layer: 0
   m_Name: NetworkManager
   m_TagString: NetworkManager
@@ -30,6 +31,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
+--- !u!114 &11437370
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 185116}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 101c62ecabebb2647ae94217c5a0f808, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &11440772
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -76,6 +88,7 @@ MonoBehaviour:
   - {fileID: 128878, guid: e218d7d5ca05b984ea10cfc25d80ef19, type: 2}
   - {fileID: 128878, guid: 7461f622476b0354186e756d62274f0b, type: 2}
   - {fileID: 128878, guid: a23b1531fa4022a4fb226b45e67dd531, type: 2}
+  - {fileID: 141328, guid: 06cb8c61989b58f49947f5313b4e1f3e, type: 2}
   m_CustomConfig: 0
   m_MaxConnections: 4
   m_ConnectionConfig:
