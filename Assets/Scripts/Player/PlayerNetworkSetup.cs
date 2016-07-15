@@ -5,7 +5,7 @@ public class PlayerNetworkSetup : NetworkBehaviour {
 
     void Start() {
         if (isLocalPlayer) {
-			GetComponent<PlayerMovement>().enabled = true;
+            GetComponent<PlayerMovement>().enabled = true;
             GetComponent<PlayerBasicAttack>().enabled = true;
             GetComponent<PortalAbility>().enabled = true;
             Camera2DFollow camera = Camera.main.GetComponent<Camera2DFollow>();
@@ -16,6 +16,6 @@ public class PlayerNetworkSetup : NetworkBehaviour {
     }
 
     public void SceneChange() {
-        
+
     }
 }
