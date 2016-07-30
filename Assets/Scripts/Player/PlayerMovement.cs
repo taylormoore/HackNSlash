@@ -7,6 +7,7 @@ public class PlayerMovement : NetworkBehaviour {
     public Sprite facingUp, facingDown, facingLeft, facingRight;
     public float movementSpeed;
     Animator animator;
+    CharacterController controller;
     private Player player;
     private float horizontalAxis, verticalAxis = 0f;
 
@@ -14,7 +15,7 @@ public class PlayerMovement : NetworkBehaviour {
         if (isLocalPlayer) {
             animator = GetComponent<Animator>();
         }
-
+        controller = GetComponent<CharacterController>();
         player = ReInput.players.GetPlayer(0);
     }
 
@@ -35,8 +36,8 @@ public class PlayerMovement : NetworkBehaviour {
                 animator.SetInteger("direction", 3);
             }
         }
-        transform.Translate(Vector2.up * Time.deltaTime * verticalAxis * movementSpeed);
-        transform.Translate(Vector2.right * Time.deltaTime * horizontalAxis * movementSpeed);
+        controller.Move(Vector2.up * Time.deltaTime * verticalAxis * movementSpeed);
+        controller.Move(Vector2.right * Time.deltaTime * horizontalAxis * movementSpeed);
     }
 
     void DetectMovementInput() {
