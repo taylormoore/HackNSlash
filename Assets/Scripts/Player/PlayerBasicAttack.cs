@@ -46,32 +46,9 @@ public class PlayerBasicAttack : NetworkBehaviour {
     }
 
     void DetectAttackInput() {
-        if (player.GetAxisRaw("AttackHorizontal") > 0) {
-            attackRight = true;
-        }
-        else {
-            attackRight = false;
-        }
-
-        if (player.GetAxisRaw("AttackHorizontal") < 0) {
-            attackLeft = true;
-        }
-        else {
-            attackLeft = false;
-        }
-
-        if (player.GetAxisRaw("AttackVertical") > 0) {
-            attackUp = true;
-        }
-        else {
-            attackUp = false;
-        }
-
-        if (player.GetAxisRaw("AttackVertical") < 0) {
-            attackDown = true;
-        }
-        else {
-            attackDown = false;
-        }
+        attackRight = player.GetAxisRaw("AttackHorizontal") > 0;
+        attackLeft = player.GetAxisRaw("AttackHorizontal") < 0;
+        attackUp = player.GetAxisRaw("AttackVertical") > 0;
+        attackDown = player.GetAxisRaw("AttackVertical") < 0;
     }
 }
