@@ -389,7 +389,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
 --- !u!1 &949975379
 GameObject:
   m_ObjectHideFlags: 0
@@ -1127,7 +1127,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 492440, guid: abf3bf84ee0c54540997634bc60b7b2d, type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 11450946, guid: abf3bf84ee0c54540997634bc60b7b2d, type: 2}
       propertyPath: m_UseSimulator
@@ -1186,6 +1186,10 @@ Prefab:
     - target: {fileID: 416936, guid: fe7036cedf05092429ae6026abe437d8, type: 2}
       propertyPath: m_RootOrder
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2065268, guid: fe7036cedf05092429ae6026abe437d8, type: 2}
+      propertyPath: orthographic size
+      value: 3.6875
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: fe7036cedf05092429ae6026abe437d8, type: 2}
