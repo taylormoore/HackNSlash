@@ -51,6 +51,7 @@ GameObject:
   - 114: {fileID: 11454514}
   - 58: {fileID: 5880546}
   - 114: {fileID: 11498220}
+  - 114: {fileID: 11444758}
   m_Layer: 0
   m_Name: TEST_Enemy3
   m_TagString: Enemy
@@ -221,6 +222,19 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
+--- !u!114 &11444758
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 192830}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40f0e17ca97cb5745a69cf7bbcb98c98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attackCooldown: 1
+  attackDamage: 10
 --- !u!114 &11454514
 MonoBehaviour:
   m_ObjectHideFlags: 1

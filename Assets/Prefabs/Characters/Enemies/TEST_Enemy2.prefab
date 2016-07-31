@@ -34,6 +34,7 @@ GameObject:
   - 114: {fileID: 11422850}
   - 58: {fileID: 5863646}
   - 114: {fileID: 11408944}
+  - 114: {fileID: 11416628}
   m_Layer: 0
   m_Name: TEST_Enemy2
   m_TagString: Enemy
@@ -115,6 +116,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   healthText: {fileID: 11479300}
+--- !u!114 &11416628
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 178888}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40f0e17ca97cb5745a69cf7bbcb98c98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attackCooldown: 1
+  attackDamage: 10
 --- !u!114 &11422850
 MonoBehaviour:
   m_ObjectHideFlags: 1

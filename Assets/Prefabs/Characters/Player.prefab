@@ -20,6 +20,7 @@ GameObject:
   - 114: {fileID: 11464850}
   - 50: {fileID: 5048238}
   - 61: {fileID: 6142930}
+  - 114: {fileID: 11422148}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -66,7 +67,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_Offset: {x: 0.004809618, y: 0}
   serializedVersion: 2
@@ -159,6 +160,19 @@ MonoBehaviour:
   param3: 
   param4: 
   param5: 
+--- !u!114 &11422148
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 194068}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbf495ecfe120e343971c660371174ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100
+  takeDamageCooldown: 0.5
 --- !u!114 &11445278
 MonoBehaviour:
   m_ObjectHideFlags: 1
