@@ -100,7 +100,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_TransformSyncMode: 4
-  m_SendInterval: 0.033333335
+  m_SendInterval: 0.09090909
   m_SyncRotationAxis: 0
   m_RotationSyncCompression: 0
   m_SyncSpin: 0
@@ -162,6 +162,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectile: {fileID: 128702, guid: d8c9854c30a53fb4ca748f9554054935, type: 2}
+  thisProjectile: {fileID: 0}
 --- !u!114 &11464850
 MonoBehaviour:
   m_ObjectHideFlags: 1
