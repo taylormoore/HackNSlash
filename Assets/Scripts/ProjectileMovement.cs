@@ -15,7 +15,6 @@ public class ProjectileMovement : NetworkBehaviour {
 	}
 
 	void FixedUpdate() {
-
 		switch (myDirection) {
 			case 1:
 				transform.Translate(Vector2.left * movementSpeed * Time.deltaTime);

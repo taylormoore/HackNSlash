@@ -42,7 +42,6 @@ public class PlayerMovement : NetworkBehaviour {
 
     void DetectMovementInput() {
         horizontalAxis = player.GetAxisRaw("MoveHorizontal");
-
         verticalAxis = player.GetAxisRaw("MoveVertical");
     }
 }
