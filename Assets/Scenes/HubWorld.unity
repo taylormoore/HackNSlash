@@ -1235,7 +1235,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 2065268, guid: fe7036cedf05092429ae6026abe437d8, type: 2}
       propertyPath: orthographic size
-      value: 4.09375
+      value: 3.390625
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: fe7036cedf05092429ae6026abe437d8, type: 2}

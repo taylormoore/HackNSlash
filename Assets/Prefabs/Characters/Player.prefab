@@ -18,7 +18,8 @@ GameObject:
   - 114: {fileID: 11416030}
   - 114: {fileID: 11445278}
   - 114: {fileID: 11464850}
-  - 143: {fileID: 14343198}
+  - 50: {fileID: 5048238}
+  - 61: {fileID: 6142930}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -39,6 +40,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
+--- !u!50 &5048238
+Rigidbody2D:
+  serializedVersion: 2
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 194068}
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!61 &6142930
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 194068}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0.004809618, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 0.31723255, y: 0.5}
 --- !u!95 &9541968
 Animator:
   serializedVersion: 3
@@ -99,7 +131,7 @@ MonoBehaviour:
   m_Script: {fileID: -1768714887, guid: 870353891bb340e2b2a9c8707e7419ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_TransformSyncMode: 4
+  m_TransformSyncMode: 1
   m_SendInterval: 0.09090909
   m_SyncRotationAxis: 0
   m_RotationSyncCompression: 0
@@ -190,23 +222,6 @@ MonoBehaviour:
   facingLeft: {fileID: 21300002, guid: 14398d56a4df5aa4e9fe6bdad0b8a3bd, type: 3}
   facingRight: {fileID: 21300004, guid: 14398d56a4df5aa4e9fe6bdad0b8a3bd, type: 3}
   movementSpeed: 2.5
---- !u!143 &14343198
-CharacterController:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 194068}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Height: 0.5
-  m_Radius: 0.15
-  m_SlopeLimit: 45
-  m_StepOffset: 0.3
-  m_SkinWidth: 0.08
-  m_MinMoveDistance: 0.001
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!212 &21249824
 SpriteRenderer:
   m_ObjectHideFlags: 1
