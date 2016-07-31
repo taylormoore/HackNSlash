@@ -1,5 +1,4 @@
 ﻿using UnityEngine;
-using System.Collections;
 
 public class PlayerHealthManager : MonoBehaviour {
 
@@ -10,6 +9,12 @@ public class PlayerHealthManager : MonoBehaviour {
 	float takeDamageCooldown;
 
 	float lastDamageTaken;
+
+	PlayerHealthUI playerHealthUI;
+
+	void Start() {
+		playerHealthUI = GetComponent<PlayerHealthUI>();
+	}
 
 	public void ApplyDamage(int damage) {
 		if (Time.time > lastDamageTaken + takeDamageCooldown) {
