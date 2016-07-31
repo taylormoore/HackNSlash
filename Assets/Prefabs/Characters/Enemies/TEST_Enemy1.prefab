@@ -52,6 +52,7 @@ GameObject:
   - 58: {fileID: 5893884}
   - 114: {fileID: 11432024}
   - 114: {fileID: 11469738}
+  - 114: {fileID: 11448284}
   m_Layer: 0
   m_Name: TEST_Enemy1
   m_TagString: Enemy
@@ -137,6 +138,20 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
+--- !u!114 &11448284
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 191554}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fad67fec23e543f4b86a1d6a4a40551a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  droppableItems:
+  - {fileID: 174154, guid: 8146975aab1f5524b8496a4bfa673ba5, type: 2}
+  itemDropChance: 100
 --- !u!114 &11458688
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -213,7 +228,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98d5018243efbda45a106d220aeab2cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyHealth: 100
+  enemyHealth: 20
 --- !u!114 &11489326
 MonoBehaviour:
   m_ObjectHideFlags: 1

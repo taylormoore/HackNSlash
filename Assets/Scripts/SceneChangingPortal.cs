@@ -15,7 +15,6 @@ public class SceneChangingPortal : NetworkBehaviour {
 		GameObject.FindWithTag("NetworkManager")
 				.GetComponent<NetworkManager>()
 				.ServerChangeScene(nextScene);
-
 	}
 
 	void OnLeveLWasLoaded(int level) {

@@ -35,6 +35,7 @@ GameObject:
   - 58: {fileID: 5863646}
   - 114: {fileID: 11408944}
   - 114: {fileID: 11416628}
+  - 114: {fileID: 11414676}
   m_Layer: 0
   m_Name: TEST_Enemy2
   m_TagString: Enemy
@@ -116,6 +117,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   healthText: {fileID: 11479300}
+--- !u!114 &11414676
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 178888}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fad67fec23e543f4b86a1d6a4a40551a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  droppableItems:
+  - {fileID: 174154, guid: 8146975aab1f5524b8496a4bfa673ba5, type: 2}
+  itemDropChance: 100
 --- !u!114 &11416628
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -140,7 +155,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98d5018243efbda45a106d220aeab2cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyHealth: 150
+  enemyHealth: 20
 --- !u!114 &11442548
 MonoBehaviour:
   m_ObjectHideFlags: 1

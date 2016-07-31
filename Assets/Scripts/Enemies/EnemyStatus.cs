@@ -21,9 +21,14 @@ public class EnemyStatus : NetworkBehaviour {
         enemyHealth -= value;
         enemyUI.SetHealthUI(enemyHealth);
         if (enemyHealth <= 0) {
-            NetworkServer.Destroy(gameObject);
+			Death();
         }
     }
+
+	public void Death() {
+		gameObject.SendMessage("DropItem");
+		NetworkServer.Destroy(gameObject);
+	}
 
     public int GetHealth() {
         return enemyHealth;

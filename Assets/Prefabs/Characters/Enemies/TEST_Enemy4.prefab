@@ -35,6 +35,7 @@ GameObject:
   - 58: {fileID: 5899800}
   - 114: {fileID: 11476404}
   - 114: {fileID: 11436304}
+  - 114: {fileID: 11400834}
   m_Layer: 0
   m_Name: TEST_Enemy4
   m_TagString: Enemy
@@ -104,6 +105,20 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.4
+--- !u!114 &11400834
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 181844}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fad67fec23e543f4b86a1d6a4a40551a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  droppableItems:
+  - {fileID: 174154, guid: 8146975aab1f5524b8496a4bfa673ba5, type: 2}
+  itemDropChance: 100
 --- !u!114 &11413570
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -274,7 +289,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98d5018243efbda45a106d220aeab2cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyHealth: 250
+  enemyHealth: 20
 --- !u!212 &21239462
 SpriteRenderer:
   m_ObjectHideFlags: 1
