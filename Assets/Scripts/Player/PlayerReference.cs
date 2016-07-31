@@ -19,6 +19,12 @@ public static class PlayerReference {
 		return players;
 	}
 
+	public static void RefreshPlayersUI() {
+		foreach (GameObject player in players) {
+			player.SendMessage("UpdateHealthUI");
+		}
+	}
+
 	public static bool PlayersArePresent() {
 		if (players.Count > 0) {
 			return true;

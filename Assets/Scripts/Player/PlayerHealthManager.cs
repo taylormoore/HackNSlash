@@ -1,8 +1,10 @@
 ﻿using UnityEngine;
+using UnityEngine.Networking;
 
-public class PlayerHealthManager : MonoBehaviour {
+public class PlayerHealthManager : NetworkBehaviour {
 
 	[SerializeField]
+	[SyncVar (hook ="SetHealth")]
 	int health;
 
 	[SerializeField]
@@ -14,6 +16,7 @@ public class PlayerHealthManager : MonoBehaviour {
 
 	void Start() {
 		playerHealthUI = GetComponent<PlayerHealthUI>();
+		PlayerReference.RefreshPlayersUI();
 	}
 
 	public void ApplyDamage(int damage) {
@@ -21,5 +24,14 @@ public class PlayerHealthManager : MonoBehaviour {
 			health -= damage;
 			lastDamageTaken = Time.time;
 		}
+	}
+
+	public void UpdateHealthUI() {
+		SetHealth(health);
+	}
+
+	public void SetHealth(int newHealth) {
+		health = newHealth;
+		playerHealthUI.SetHealthUI(health);
 	}
 }
