@@ -8,6 +8,7 @@ public class PlayerNetworkSetup : NetworkBehaviour {
 			GetComponent<PlayerMovement>().enabled = true;
 			GetComponent<PlayerBasicAttack>().enabled = true;
 			GetComponent<PortalAbility>().enabled = true;
+			GetComponent<PlayerInteract>().enabled = true;
 			Camera2DFollow camera = Camera.main.GetComponent<Camera2DFollow>();
 			camera.enabled = true;
 			camera.target = gameObject.transform;

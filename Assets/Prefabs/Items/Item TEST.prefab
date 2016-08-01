@@ -9,9 +9,9 @@ GameObject:
   m_Component:
   - 4: {fileID: 456906}
   - 212: {fileID: 21282168}
-  - 61: {fileID: 6137902}
   - 114: {fileID: 11495176}
   - 114: {fileID: 11435680}
+  - 58: {fileID: 5878884}
   m_Layer: 0
   m_Name: Item TEST
   m_TagString: Interactable
@@ -26,14 +26,14 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 174154}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.32882336, y: -0.24185675, z: 0}
+  m_LocalPosition: {x: -4, y: -0.24185675, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
---- !u!61 &6137902
-BoxCollider2D:
+--- !u!58 &5878884
+CircleCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -41,11 +41,11 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
-  m_Offset: {x: 0.005128175, y: -0.022169054}
+  m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Size: {x: 0.34068, y: 0.3454374}
+  m_Radius: 0.93
 --- !u!114 &11435680
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -11,7 +11,7 @@ public class PortalAbility : NetworkBehaviour {
 
     GameObject myPortal;
 	List<string> noPortalScenes = new List<string>();
-    private Player player;
+    Player player;
 
     float lastPortalCast;
 	[SerializeField]
