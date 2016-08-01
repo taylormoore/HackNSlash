@@ -18,40 +18,35 @@ public class PlayerBasicAttack : NetworkBehaviour {
 	void Update() {
 		DetectAttackInput();
 
-		if (!(Time.time > lastAttack + attackCooldown)) {
+		if (Time.time > lastAttack + attackCooldown == false) {
 			return;
 		}
 
 		if (attackLeft) {
-			CmdShootProjectile(1, gameObject);
+			CmdShootProjectile(1);
 			lastAttack = Time.time;
 		} else if (attackRight) {
-			CmdShootProjectile(2, gameObject);
+			CmdShootProjectile(2);
 			lastAttack = Time.time;
 		} else if (attackUp) {
-			CmdShootProjectile(3, gameObject);
+			CmdShootProjectile(3);
 			lastAttack = Time.time;
 		} else if (attackDown) {
-			CmdShootProjectile(4, gameObject);
+			CmdShootProjectile(4);
 			lastAttack = Time.time;
 		}
 	}
 
 	[Command]
-	public void CmdShootProjectile(int direction, GameObject spawner) {
-		RpcDestroyProjectile(direction, spawner);
+	public void CmdShootProjectile(int direction) {
+		RpcShootProjectile(direction);
 	}
 
 	[ClientRpc]
-	public void RpcDestroyProjectile(int direction, GameObject spawner) {
+	public void RpcShootProjectile(int direction) {
 		GameObject proj;
-		if (gameObject == spawner) {
-			proj = (GameObject) Instantiate(projectile, transform.position, Quaternion.identity);
-			proj.SendMessage("SetReal", true);
-		} else {
-			proj = (GameObject) Instantiate(projectile, spawner.transform.position, Quaternion.identity);
-			proj.SendMessage("SetReal", false);
-		}
+		proj = (GameObject) Instantiate(projectile, transform.position, Quaternion.identity);
+		proj.SendMessage("SetReal", isLocalPlayer);
 		proj.SendMessage("UpdateDirection", direction);
 		Destroy(proj, 3f);
 	}
