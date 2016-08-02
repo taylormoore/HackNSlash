@@ -6,7 +6,9 @@ public class EnemyMeleeAttack : MonoBehaviour {
 	float lastAttack;
 	GameObject nearestPlayer;
 	[SerializeField]
-	float attackCooldown, attackDamage;
+	float attackCooldown;
+	[SerializeField]
+	float attackDamage;
 
 	void OnTriggerStay2D(Collider2D other) {
 		if (other.gameObject.tag == "Player" && Time.time > attackCooldown + lastAttack) {

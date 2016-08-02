@@ -8,8 +8,8 @@ public class ProjectileDamage : MonoBehaviour {
 	void OnTriggerEnter2D(Collider2D otherObject) {
 		if (otherObject.gameObject.tag == "Enemy") {
 			if (projectileDamage > 0) {
-				EnemyAndDamageHolder enemyAndDamage = new EnemyAndDamageHolder(otherObject.gameObject, projectileDamage);
-				PlayerReference.GetHost().SendMessage("CmdDealDamage", enemyAndDamage);
+				DamageRelay relay = new DamageRelay(otherObject.gameObject, projectileDamage);
+				PlayerReference.GetHost().SendMessage("CmdDealDamage", relay);
 			}
 			Destroy(gameObject);
 		}

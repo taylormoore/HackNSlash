@@ -12,7 +12,7 @@ public class EnemyMovement : MonoBehaviour {
     }
 
     void FixedUpdate() {
-        nearestPlayer = utils.FindNearestPlayer(gameObject);
+        nearestPlayer = utils.FindNearestObject(gameObject, PlayerReference.GetPlayers());
     }
 
     void MoveTowardsNearestPlayer() {
