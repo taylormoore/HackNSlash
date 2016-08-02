@@ -3,22 +3,20 @@ using System.Collections;
 
 public class ProjectileDamage : MonoBehaviour {
 
-	[SerializeField]
-	float projectileDamage;
-
-    bool isReal = false;
+    int projectileDamage = 0;
 
 	void OnTriggerEnter2D(Collider2D otherObject) {
 		if (otherObject.gameObject.tag == "Enemy") {
-		if (isReal) {
-			otherObject.SendMessage("ApplyDamage", projectileDamage);
-		}
+			if (projectileDamage > 0) {
+				EnemyAndDamageHolder enemyAndDamage = new EnemyAndDamageHolder(otherObject.gameObject, projectileDamage);
+				PlayerReference.GetHost().SendMessage("CmdDealDamage", enemyAndDamage);
+			}
 			Destroy(gameObject);
 		}
 	}
 
-    public void SetReal(bool real)
+    public void SetDamage(int damage)
     {
-        isReal = real;
+		projectileDamage = damage;
     }
 }

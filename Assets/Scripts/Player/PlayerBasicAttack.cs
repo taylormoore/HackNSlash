@@ -4,7 +4,7 @@ using UnityEngine.Networking;
 
 public class PlayerBasicAttack : NetworkBehaviour {
 	public GameObject projectile;
-	public GameObject thisProjectile;
+	public float projectileDamage;
 	float attackCooldown = .4f;
 	float lastAttack = 0f;
 
@@ -46,7 +46,7 @@ public class PlayerBasicAttack : NetworkBehaviour {
 	public void RpcShootProjectile(int direction) {
 		GameObject proj;
 		proj = (GameObject) Instantiate(projectile, transform.position, Quaternion.identity);
-		proj.SendMessage("SetReal", isLocalPlayer);
+		proj.SendMessage("SetDamage", projectileDamage);
 		proj.SendMessage("UpdateDirection", direction);
 		Destroy(proj, 3f);
 	}

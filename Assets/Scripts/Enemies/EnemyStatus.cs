@@ -18,6 +18,9 @@ public class EnemyStatus : NetworkBehaviour {
     }
 
     public void ApplyDamage(int value) {
+		if (!isServer) {
+			return;
+		}
         enemyHealth -= value;
         enemyUI.SetHealthUI(enemyHealth);
         if (enemyHealth <= 0) {

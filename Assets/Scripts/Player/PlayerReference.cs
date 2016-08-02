@@ -38,4 +38,9 @@ public static class PlayerReference {
 			return false;
 		}
 	}
+
+	/** Returns the host player. */
+	public static GameObject GetHost() {
+		return players[0];
+	}
 }

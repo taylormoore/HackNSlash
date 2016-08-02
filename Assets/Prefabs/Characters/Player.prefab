@@ -40,6 +40,7 @@ GameObject:
   - 114: {fileID: 11422148}
   - 114: {fileID: 11470506}
   - 114: {fileID: 11492962}
+  - 114: {fileID: 11409916}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -200,6 +201,17 @@ MonoBehaviour:
   m_SnapThreshold: 5
   m_InterpolateRotation: 1
   m_InterpolateMovement: 1
+--- !u!114 &11409916
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 194068}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f76a1e31b99cd114aaeeca97143deeab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &11416030
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -301,7 +313,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectile: {fileID: 128702, guid: d8c9854c30a53fb4ca748f9554054935, type: 2}
-  thisProjectile: {fileID: 0}
+  projectileDamage: 10
 --- !u!114 &11464850
 MonoBehaviour:
   m_ObjectHideFlags: 1
